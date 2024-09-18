@@ -1,9 +1,9 @@
 {
     "layout": {
-        "layout_text_1": "Address:",
+        "layout_text_1": "Lokatsiya",
         "layout_text_2": "Tashkent:",
-        "layout_text_3": "Instagram",
-        "layout_text_4": "Telegram",
+        "layout_text3": "Instagram",
+        "layout_text4": "Telegram",
         "layout_btn": "Get Bonus"
     }
 }
