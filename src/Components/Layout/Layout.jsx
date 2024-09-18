@@ -1,6 +1,12 @@
 import React from 'react'
+import { useTranslation } from 'react-i18next';
 
 const Layout = () => {
+  const { t, i18n } = useTranslation();
+
+  const handleLanguage = (e) => {
+    i18n.changeLanguage(e.target.value);
+  };
   return (
     <div className='bg-[#007aff]'>
       <div className='max-w-[1200px] mx-auto p-[20px] flex justify-between items-center'>
@@ -18,9 +24,23 @@ const Layout = () => {
                 <img src="https://clemar.uz/static/media/telegram.c595f804c186181bf4a1da46dcaaa231.svg" alt="" />
                 <p className='text-[white]'>Telegram</p>
             </li>
-         </ul>
-         <ul className=''>
-               <a className='text-[18px] text-[#ffff] font-semibold' href="tel:+998555001411" target="_blank" class="tel text">+998 55 500 14 11</a>
+            <li className='text-[#ffff]'>
+                <a className='text-[18px] font-semibold' href="tel:+998555001411" target="_blank" class="tel text">+998 55 500 14 11</a>
+            </li>
+            <li className='header-item'>
+                <select
+                  defaultValue={"uz"}
+                  onChange={handleLanguage}
+                  className='border border-[#007aff] bg-[#007aff] text-[white] rounded-[5px]'
+                >
+                  <option value="ru">Eng</option>
+                  <option value="en">Rus</option>
+                  <option value="uz">O`z</option>
+                </select>
+              </li>
+              <li className=''>
+              <button class="text-[blue] bg-[white] w-[140px] h-[40px] rounded-[5px] text-[20px] items-center">Get a bonus</button>
+              </li>
          </ul>
       </div>
     </div>
