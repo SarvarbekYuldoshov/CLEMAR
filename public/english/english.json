@@ -1,14 +1,26 @@
 {
     "layout": {
-        "layout_text_1": "Lokatsiya",
-        "layout_text_2": "Tashkent:",
-        "layout_text3": "Instagram",
-        "layout_text4": "Telegram",
-        "layout_btn": "Get Bonus",
-        "layout_btn_1": "Fill in the details",
-        "layout_btn_2": "We will contact you as soon as possible and deliver your product. Our service is free!",
-        "layout_btn_3": "First Name",
-        "layout_btn_4": "Last Name",
-        "layout_btn_5": "Enter your number"
+      "layout_text_1": "Address:",
+      "layout_text_2": "Tashkent:",
+      "layout_text_3": "Instagram",
+      "layout_text_4": "Telegram",
+      "layout_btn": "Get Bonus",
+      "layout_btn_1": "Fill in the information",
+      "layout_btn_2": "We will contact you as soon as possible and deliver your product. Our service is free!",
+      "layout_btn_3": "Name",
+      "layout_btn_4": "Surname",
+      "layout_btn_5": "Enter your number",
+      "layout_btn_6": "Enter your name",
+      "layout_btn_7": "Enter your surname",
+      "layout_text_5": "Information sent",
+      "layout_text_6": "Error sending",
+      "layout_text_7": "An error occurred, please try again later",
+      "layout_text_8": "Name must be at least 5 characters long",
+      "layout_text_9": "Surname must be at least 5 characters long",
+      "layout_text_10": "Phone number must start with +998 and consist of 9 digits",
+      "layout_text_11": "Enter your first name",
+      "layout_text_12": "Enter your last name",
+      "layout_text_13": "Enter your phone number"
     }
-}
+  }
+  
