@@ -4,6 +4,11 @@
         "layout_text_2": "Ташкент:",
         "layout_text_3": "Instagram",
         "layout_text_4": "Telegram",
-        "layout_btn": "Получить бонус"
+        "layout_btn": "Получить бонус",
+        "layout_btn_1": "Заполните данные",
+        "layout_btn_2": "Мы свяжемся с вами как можно скорее и доставим ваш товар. Наши услуги бесплатны!",
+        "layout_btn_3": "Имя",
+        "layout_btn_4": "Фамилия",
+        "layout_btn_5": "Введите ваш номер"
     }
 }

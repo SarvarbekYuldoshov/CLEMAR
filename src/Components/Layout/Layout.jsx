@@ -1,13 +1,59 @@
-import React from 'react';
+import React, { useState } from 'react';
 import { useTranslation } from 'react-i18next';
 import "./Layout.css"
+import { Button, Form, Input, Modal } from 'antd';
 const Layout = () => {
   const { t, i18n } = useTranslation();
 
   const handleLanguageChange = (e) => {
     i18n.changeLanguage(e.target.value);
   };
-
+  const [open, setOpen] = useState(false);
+  const [form] = Form.useForm();
+  
+  const sendMessage = () => {
+    form.validateFields()
+      .then((values) => {
+        const { name, surname, number } = values;
+        const token = "7288526920:AAH-vd_HYqMjr_qE5zG6idFBNxfFeMi9aFo";
+        const chat_id = "6801549705";
+        const url = `https://api.telegram.org/bot${token}/sendMessage`;
+        const messageText = `Ism: ${name}\nFamiliya: ${surname}\nNumber: ${number}\nMahsulot: ${selectedItem?.name}\nNarxi: ${selectedItem?.price}`;
+        fetch(url, {
+          method: 'POST',
+          headers: {
+            'Content-Type': 'application/json',
+          },
+          body: JSON.stringify({
+            chat_id,
+            text: messageText,
+          }),
+        })
+          .then((res) => res.json())
+          .then((res) => {
+            if (res.ok) {
+              message.success("Ma'lumot yuborildi");
+              form.resetFields();
+              setOpen(false);
+            } else {
+              message.error("Yuborishda xatolik yuz berdi");
+            }
+          })
+          .catch((err) => {
+            console.error(err);
+            message.error("Xatolik yuz berdi, iltimos keyinroq urinib ko'ring");
+          });
+      })
+      .catch(() => {
+        message.error("Iltimos, barcha maydonlarni to'ldiring!");
+      });
+  };
+  
+  const showModal = () => setOpen(true);
+  const closeModal = () => {
+    form.resetFields();
+    setOpen(false);
+  };
   return (
     <div className='bg-[#007aff] layout'>
       <div className='max-w-[1200px] mx-auto p-[20px] flex justify-between items-center'>
@@ -69,9 +115,40 @@ const Layout = () => {
             </select>
           </li>
           <li className=''>
-            <button className="text-[blue] bg-[white] w-[140px] h-[40px] rounded-[5px] text-[15x] items-center hover:transition-transform duration-500 hover:scale-110">
-              {t("layout.layout_btn")}
-            </button>
+            <Button className='text-[blue] bg-[white] w-[140px] h-[40px] rounded-[5px] text-[15x] items-center hover:transition-transform duration-500 hover:scale-110' onClick={() => showModal({ name: 'Product Name', price: '100' })}>
+            {t("layout.layout_btn")}
+          </Button>
+
+          <Modal open={open} footer={null} onCancel={closeModal}>
+            <h1 className='flex items-center justify-center text-[30px]'>{t("layout.layout_btn_1")}</h1>
+            <p className='justify-center text-[20px] text-[blue]'>{t("layout.layout_btn_2")}</p>
+            <Form form={form} layout="vertical">
+              <Form.Item
+                label="Ism"
+                name="name"
+                rules={[{ required: true, message: 'Ismingizni kiriting' }, { min: 5, message: 'Ism 5 tadan kam bo\'lmasligi kerak' }]}
+              >
+                <Input className='w-full h-[50px]' placeholder='Ismingizni kiriting' />
+              </Form.Item>
+              <Form.Item
+                label="Familiya"
+                name="surname"
+                rules={[{ required: true, message: 'Familiyangizni kiriting' }, { min: 5, message: 'Familiya 5 tadan kam bo\'lmasligi kerak' }]}
+              >
+                <Input className='w-full h-[50px]' placeholder='Familiyangizni kiriting' />
+              </Form.Item>
+              <Form.Item
+                label="Telefon raqam"
+                name="number"
+                rules={[{ required: true, message: 'Telefon raqamingizni kiriting' }, { pattern: /^\+998\d{9}$/, message: 'Telefon raqam +998 bilan boshlanib, 9 ta raqamdan iborat bo\'lishi kerak' }]}
+              >
+                <Input className='w-full h-[50px]' placeholder='+998' />
+              </Form.Item>
+              <Button className='w-full h-[50px]' onClick={sendMessage} type="primary">
+                Yuborish
+              </Button>
+            </Form>
+          </Modal>
           </li>
         </ul>
       </div>

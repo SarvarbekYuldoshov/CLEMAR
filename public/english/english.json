@@ -4,6 +4,11 @@
         "layout_text_2": "Tashkent:",
         "layout_text3": "Instagram",
         "layout_text4": "Telegram",
-        "layout_btn": "Get Bonus"
+        "layout_btn": "Get Bonus",
+        "layout_btn_1": "Fill in the details",
+        "layout_btn_2": "We will contact you as soon as possible and deliver your product. Our service is free!",
+        "layout_btn_3": "First Name",
+        "layout_btn_4": "Last Name",
+        "layout_btn_5": "Enter your number"
     }
 }
