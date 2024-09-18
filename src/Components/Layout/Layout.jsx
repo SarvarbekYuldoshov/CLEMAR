@@ -19,6 +19,9 @@ const Layout = () => {
                 <p className='text-[white]'>Telegram</p>
             </li>
          </ul>
+         <ul className=''>
+               <a className='text-[18px] text-[#ffff] font-semibold' href="tel:+998555001411" target="_blank" class="tel text">+998 55 500 14 11</a>
+         </ul>
       </div>
     </div>
   )
