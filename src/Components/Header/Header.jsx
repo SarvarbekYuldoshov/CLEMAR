@@ -48,17 +48,17 @@ const Header = () => {
   ];
 
   return (
-    <div className="bg-white p-[20px] mt-[90px] header">
-      <div className="max-w-[1200px] mx-auto flex gap-[30px] items-center max-lg:flex-wrap ">
-        <div className='border border-[blue] w-[150px] h-[35px] bg-[#007aff] rounded-[7px] max-sm:w-[90px]'>
+    <div className="bg-white p-[20px] mt-[60px] header ">
+      <div className=" max-w-[1200px] mt-[-25px]  mx-auto flex gap-[30px] items-center max-lg:flex-wrap ">
+        <div className='border border-[blue] w-[150px] ml-[20px] h-[35px] bg-[#007aff] rounded-[7px] max-sm:w-[90px]'>
           <Dropdown
             className="w-[30px] h-[25] ml-[5px] max-sm:w-[20px] mt-[5px] "
             menu={{ items }}
             placement="bottomRight"
           >
             <button className="flex items-center  bg-transparent text-white rounded gap-[10px]">
-              <img className="" src={Rasm_1} alt="Menu" />
-              <span className="text-white text-[18px] font-semibold mt-[5px] max-sm:text-[12px]">{t("header.header_text_29")}</span>
+              <img className="mt-[-5px]" src={Rasm_1} alt="Menu" />
+              <span className="text-white text-[18px] font-semibold  max-sm:text-[12px]">{t("header.header_text_29")}</span>
             </button>
           </Dropdown>
         </div>
@@ -81,13 +81,13 @@ const Header = () => {
                  <img className='ml-[30px] mt-[5px] max-sm:ml-[8px]' src="	https://clemar.uz/static/media/search.d2ffda43e103337068b589fd598257db.svg" alt="" />
              </li>
           </ul>
-           <ul className='mt-[25px] max-lg:hidden'>
+           <ul className='mt-[28px] max-lg:hidden'>
               <Link to="/onas" className=''>
                   {t("header.header_text_31")}
               </Link>
             </ul>
-          <div className='flex gap-[10px] items-center max-lg:mt-[-50px]'>
-           <img className='w-[25px] h-[23px]' src={Rasm_9} alt="" />
+          <div className='flex gap-[10px] mt-[5px] items-center max-lg:mt-[-50px]'>
+           <img className='w-[20px] h-[18px]' src={Rasm_9} alt="" />
            <p className='h-[23px] mt-[20px]'>{t("header.header_text_32")}</p>
         </div>
         </div>

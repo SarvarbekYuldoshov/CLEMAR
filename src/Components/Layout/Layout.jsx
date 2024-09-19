@@ -74,7 +74,7 @@ const Layout = () => {
   };
 
   return (
-    <div className='bg-[#007aff] layout'>
+    <div className='bg-[#007aff] layout mt-[-10px]'>
       <div className='max-w-[1200px] mx-auto p-[20px] flex justify-between items-center'>
         <ul className='flex gap-[20px] items-center max-sm:gap-[10px]'>
           <img

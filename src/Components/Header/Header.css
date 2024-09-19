@@ -1,5 +1,5 @@
 .header{
-    height: 100px;
+    height: 60px;
     position: fixed;
     top: 0;
     left: 0;
@@ -8,7 +8,7 @@
     background-color:#ffff;
     z-index: 999;
 }
-@media (max-width: 51020px) {
+@media (max-width: 1020px) {
     .container {
       width: 320px;
     }
