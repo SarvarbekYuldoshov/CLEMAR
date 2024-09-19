@@ -48,23 +48,34 @@ const Header = () => {
 
   return (
     <div className="bg-white p-[20px] mt-[90px] header">
-      <div className="max-w-[1200px] mx-auto flex justify-between items-center">
-        <div className='border border-[blue] w-[150px] h-[55px] bg-[#007aff] rounded-[7px]'>
+      <div className="max-w-[1200px] mx-auto flex gap-[30px] items-center">
+        <div className='border border-[blue] w-[150px] h-[35px] bg-[#007aff] rounded-[7px]'>
           <Dropdown
-            className="w-[65px]"
+            className="w-[30px] h-[25] ml-[10px]"
             menu={{ items }}
             placement="bottomRight"
           >
-            <button className="flex items-center p-2 bg-transparent text-white rounded gap-[10px]">
-              <img className="w-20 h-10" src={Rasm_1} alt="Menu" />
-              <span className="text-white text-[18px] font-semibold">Катаlog</span>
+            <button className="flex items-center  bg-transparent text-white rounded gap-[10px]">
+              <img className="" src={Rasm_1} alt="Menu" />
+              <span className="text-white text-[18px] font-semibold mt-[5px]">{t("header.header_text_29")}</span>
             </button>
           </Dropdown>
         </div>
-        <div>
-          <a className="logo" href="/">
-            <img className='w-[180px] h-[45px]' src={Rasm_7} alt="logo" />
-          </a>
+        <div className='flex  gap-[20px] items-center'>
+          <ul className=''>
+            <a className="logo" href="/">
+                <img className='w-[150px] h-[35px] mt-[15px]' src={Rasm_7} alt="logo" />
+            </a>
+          </ul>
+          <ul className='flex items-center justify-center'>
+              <input className='border border-black rounded-[3px] w-[300px] h-[35px] mt-[20px]' type="" placeholder={t("header.header_text_30")}/>
+             <li className='w-[80px] h-[35px] bg-[blue] mb-[-20px] ml-[-5px] rounded-tr-[5px] rounded-br-[5px]'>
+                 <img className='ml-[30px] mt-[5px]' src="	https://clemar.uz/static/media/search.d2ffda43e103337068b589fd598257db.svg" alt="" />
+             </li>
+          </ul>
+        </div>
+        <div className=''>
+             <Link>О нас</Link>
         </div>
       </div>
     </div>
