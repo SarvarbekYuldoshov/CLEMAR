@@ -24,19 +24,19 @@ const Header = () => {
               <p className=''>Pol yuvish mashinalari</p>
           </Link>
           <Link>
-              <img className='' src={Rasm_3} alt="" />
+              <img className='w-[25px] h-[25px]' src={Rasm_3} alt="" />
               <p className=''></p>
           </Link>
           <Link>
-              <img className='' src={Rasm_4} alt="" />
+              <img className='w-[25px] h-[25px]' src={Rasm_4} alt="" />
               <p className=''></p>
           </Link>
           <Link>
-              <img className='' src={Rasm_5} alt="" />
+              <img className='w-[25px] h-[25px]' src={Rasm_5} alt="" />
               <p className=''></p>
           </Link>
           <Link>
-              <img className='' src={Rasm_6} alt="" />
+              <img className='w-[25px] h-[25px]' src={Rasm_6} alt="" />
               <p className=''></p>
           </Link>
         </ul>
