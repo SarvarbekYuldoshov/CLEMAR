@@ -8,3 +8,12 @@
     background-color:#ffff;
     z-index: 999;
 }
+@media (max-width: 51020px) {
+    .container {
+      width: 320px;
+    }
+    .header{
+        height: 200px;
+    }
+  }
+  

@@ -9,7 +9,7 @@ const Onas = () => {
     <div>
       <Layout />
       <Header />
-      <div className="max-w-screen-lg mx-auto p-6 mt-[250px]">
+      <div className="max-w-screen-lg mx-auto p-6 mt-[250px] max-lg:mt-[300px]">
         <h1 className="font-montserrat text-2xl md:text-3xl lg:text-4xl font-semibold mb-4">
           {t("Onas.Onas_text_1")}
         </h1>
