@@ -76,9 +76,9 @@ const Header = () => {
         </div>
         <div className='flex max-lg:flex-wrap gap-[30px]'>
         <ul className='flex items-center justify-center max-lg:mt-[-50px]'>
-              <input className='border border-black rounded-[3px] w-[300px] h-[35px] mt-[20px] max-sm:w-[150px]' type="" placeholder={t("header.header_text_30")}/>
+              <input className='border border-black rounded-[3px] w-[300px] h-[35px] mt-[20px] max-sm:w-[100px]' type="" placeholder={t("header.header_text_30")}/>
              <li className='w-[80px] h-[35px] bg-[blue] mb-[-20px] ml-[-5px] rounded-tr-[5px] rounded-br-[5px]'>
-                 <img className='ml-[30px] mt-[5px]' src="	https://clemar.uz/static/media/search.d2ffda43e103337068b589fd598257db.svg" alt="" />
+                 <img className='ml-[30px] mt-[5px] max-sm:w-[]' src="	https://clemar.uz/static/media/search.d2ffda43e103337068b589fd598257db.svg" alt="" />
              </li>
           </ul>
            <ul className='mt-[25px] max-lg:hidden'>
