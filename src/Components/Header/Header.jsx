@@ -11,6 +11,7 @@ import Rasm_4 from "../images/rasm4.png";
 import Rasm_5 from "../images/rasm5.png";
 import Rasm_6 from "../images/rasm6.png";
 import Rasm_7 from "../images/rasm7.png";
+import Rasm_9 from "../images/rasm9.png";
 
 
 const Header = () => {
@@ -79,7 +80,9 @@ const Header = () => {
              {t("header.header_text_31")}
               </Link>
         </div>
-        <div></div>
+        <div className=''>
+           <img className='w-[25px] h-[23px]' src={Rasm_9} alt="" />
+        </div>
       </div>
     </div>
   );
