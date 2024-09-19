@@ -75,8 +75,11 @@ const Header = () => {
           </ul>
         </div>
         <div className=''>
-             <Link>О нас</Link>
+             <Link to="/onas" className=''>
+             {t("header.header_text_31")}
+              </Link>
         </div>
+        <div></div>
       </div>
     </div>
   );
