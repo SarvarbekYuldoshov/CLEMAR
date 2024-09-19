@@ -21,5 +21,41 @@
         "layout_text_11":"Ismingizni kiriting",
         "layout_text_12":"Familiyangizni kiriting",
         "layout_text_13":"Telefon raqamingizni kiriting"
+    },
+    "header":{
+        "header_text_1":"Pol yuvish mashinalari",
+        "header_text_2":"Professional changyutgichlar",
+        "header_text_3":"Tozalash uskunalari",
+        "header_text_4":"Yuvish vositalari",
+        "header_text_5":"Qog'oz mahsulotlari",
+
+        "header_text_6":"TVX Pol yuvish mashinalari",
+        "header_text_7":"Supuruvchilar",
+        "header_text_8":"Aylanadigan mashinalar",
+        "header_text_9":"CLEMAR Pol yuvish mashinalari",
+
+        "header_text_10":"Sebo evolyutsiyasi",
+        "header_text_11":"Santoemma",
+        "header_text_12":"Fantom",
+        "header_text_13":"Clemar CRS",
+
+        "header_text_14":"Zaminni tozalash uchun uskunalar",
+        "header_text_15":"Tozalash aravachalari",
+        "header_text_16":"Derazalarni tozalash uchun uskunalar",
+        "header_text_17":"Tozalash aravachalari",
+
+        "header_text_18":"Qo'l yuvish vositalari",
+        "header_text_19":"Umumiy gigiena vositalari",
+        "header_text_20":"Oshxonani parvarish qilish vositalari",
+        "header_text_21":"Binolarning tozaligi va gigienasi uchun mahsulotlar",
+
+        "header_text_22":"Hammomni parvarish qilish vositalari",
+        "header_text_23":"Idish va idish yuvish mashinalari uchun mahsulotlar",
+        "header_text_24":"Kir yuvish vositalari",
+
+        "header_text_25":"Tualet qog'ozi",
+        "header_text_26":"Qog'oz sochiqlar",
+        "header_text_27":"Salfetkalar",
+        "header_text_28":"Boshqalar"
     }
 }
