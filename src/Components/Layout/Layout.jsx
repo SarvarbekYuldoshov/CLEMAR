@@ -76,14 +76,14 @@ const Layout = () => {
   return (
     <div className='bg-[#007aff] layout'>
       <div className='max-w-[1200px] mx-auto p-[20px] flex justify-between items-center'>
-        <ul className='flex gap-[20px] items-center'>
+        <ul className='flex gap-[20px] items-center max-sm:gap-[10px]'>
           <img
             src="https://clemar.uz/static/media/location.8f50ce0bbe934fcda50814961114ab24.svg"
             alt=""
           />
           <a
             href="https://yandex.ru/navi/?ll=69.220719,41.290161&amp;panorama%5Bpoint%5D=69.220719,41.290161&amp;panorama%5Bdirection%5D=227.914276,-0.865454&amp;panorama%5Bspan%5D=90.000000,90.000000&amp;panorama%5Bid%5D=1486659497_804360267_23_1571374783"
-            className='text-[#cbc9c9]'
+            className='text-[#cbc9c9] max-sm:text-[12px]'
           >
             {t("layout.layout_text_1")}
           </a>
@@ -91,13 +91,13 @@ const Layout = () => {
             href="https://yandex.ru/navi/?ll=69.220719,41.290161&amp;panorama%5Bpoint%5D=69.220719,41.290161&amp;panorama%5Bdirection%5D=227.914276,-0.865454&amp;panorama%5Bspan%5D=90.000000,90.000000&amp;panorama%5Bid%5D=1486659497_804360267_23_1571374783"
             target="_blank"
             rel="noopener noreferrer"
-            className="min-text text-[white]"
+            className="min-text text-[white]  max-sm:text-[12px]"
           >
             {t("layout.layout_text_2")}
           </a>
         </ul>
-        <ul className='flex gap-[30px] items-center'>
-          <li className='flex gap-[10px] items-center '>
+        <ul className='flex gap-[30px] items-center max-sm:gap-[10px]'>
+          <li className='flex gap-[10px] items-center max-lg:hidden'>
             <img
               className='w-[30px] h-[20px]'
               src="https://clemar.uz/static/media/instagram.15618e7f7e625b7694935dd597571837.svg"
@@ -105,7 +105,7 @@ const Layout = () => {
             />
             <p className="min-text text-[white] my-[10px]">{t("layout.layout_text_3")}</p>
           </li>
-          <li className='flex gap-[10px] items-center'>
+          <li className='flex gap-[10px] items-center  max-lg:hidden'>
             <img className='w-[30px] h-[20px]'
               src="https://clemar.uz/static/media/telegram.c595f804c186181bf4a1da46dcaaa231.svg"
               alt=""
@@ -113,7 +113,7 @@ const Layout = () => {
             <p className='text-[white] mt-[15px]'>{t("layout.layout_text_4")}</p>
           </li>
           <li className='text-[#ffff]'>
-            <a className='text-[18px] font-semibold' href="tel:+998555001411" target="_blank" rel="noopener noreferrer">
+            <a className='text-[18px] font-semibold max-md:text-[15px] max-sm:text-[10px] ' href="tel:+998555001411" target="_blank" rel="noopener noreferrer">
               +998 55 500 14 11
             </a>
           </li>
@@ -121,15 +121,15 @@ const Layout = () => {
             <select
               value={i18n.language} 
               onChange={handleLanguageChange}
-              className='border border-[#007aff] bg-[#007aff] text-[white] rounded-[5px]'
+              className='border border-[#007aff] bg-[#007aff] text-[white]  max-sm:text-[10px]'
             >
-              <option value="en">Eng</option>
-              <option value="ru">Rus</option>
-              <option value="uz">O`z</option>
+              <option className='max-sm:text-[10px]' value="en">Eng</option>
+              <option className='max-sm:text-[10px]'  value="ru">Rus</option>
+              <option className='max-sm:text-[10px]' value="uz">O`z</option>
             </select>
           </li>
           <li className=''>
-            <Button className='text-[blue] bg-[white] w-[140px] h-[40px] rounded-[5px] text-[15x] items-center hover:transition-transform duration-500 hover:scale-110' onClick={showModal}>
+            <Button className='text-[blue] bg-[white] w-[140px] h-[40px] rounded-[5px] text-[15x] items-center hover:transition-transform duration-500 hover:scale-110 max-md:hidden' onClick={showModal}>
             {t("layout.layout_btn")}
             </Button>
 
