@@ -43,11 +43,7 @@ const Header = () => {
           placement="bottomRight"
         >
           <button className="flex items-center p-2 bg-transparent text-white rounded hover:bg-[white] transition-colors">
-            <img
-              className="w-10 h-10"
-              src={Rasm_1} 
-              alt="Menu"
-            />
+            <img className="w-10 h-10" src={Rasm_1} alt="Menu"/> 
           </button>
         </Dropdown>
       </div>

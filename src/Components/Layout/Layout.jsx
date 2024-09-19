@@ -97,7 +97,7 @@ const Layout = () => {
           </a>
         </ul>
         <ul className='flex gap-[30px] items-center'>
-          <li className='flex gap-[10px] items-center'>
+          <li className='flex gap-[10px] items-center '>
             <img
               className='w-[30px] h-[20px]'
               src="https://clemar.uz/static/media/instagram.15618e7f7e625b7694935dd597571837.svg"
@@ -113,12 +113,7 @@ const Layout = () => {
             <p className='text-[white] mt-[15px]'>{t("layout.layout_text_4")}</p>
           </li>
           <li className='text-[#ffff]'>
-            <a
-              className='text-[18px] font-semibold'
-              href="tel:+998555001411"
-              target="_blank"
-              rel="noopener noreferrer"
-            >
+            <a className='text-[18px] font-semibold' href="tel:+998555001411" target="_blank" rel="noopener noreferrer">
               +998 55 500 14 11
             </a>
           </li>
