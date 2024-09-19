@@ -68,7 +68,7 @@ const Header = () => {
                 <img className='w-[150px] h-[30px] mt-[15px] max-sm:w-[90px] ' src={Rasm_7} alt="logo" />
             </a>
           </ul>
-          <ul className='mt-[25px] max-xl:hidden max-lg:block'>
+          <ul className='mt-[20px] max-xl:hidden max-lg:block'>
               <Link to="/onas" className=''>
                   {t("header.header_text_31")}
               </Link>
