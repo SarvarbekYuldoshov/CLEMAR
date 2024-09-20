@@ -7,13 +7,7 @@ const Menu = () => {
   return (
     <div className='mt-[100px]'>
       <div className='container mx-auto'>
-        {/* Example usage of antd Card */}
-        <CardItem title="Ant Design Card Example" bordered={false} className='mb-[20px]'>
-          <p>Content inside the Ant Design card.</p>
-        </CardItem>
-
-        {/* Rendering your custom CardItem component */}
-        <CardItem />
+        <CardItem/>
       </div>
     </div>
   );
