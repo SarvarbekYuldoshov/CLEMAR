@@ -48,46 +48,41 @@ const Header = () => {
   ];
 
   return (
-    <div className="bg-white p-[20px] mt-[60px] header ">
-      <div className=" max-w-[1200px] mt-[-25px]  mx-auto flex gap-[30px] items-center max-lg:flex-wrap ">
-        <div className='border border-[blue] w-[150px] ml-[20px] h-[35px] bg-[#007aff] rounded-[7px] max-sm:w-[90px]'>
+    <div className="bg-white p-[20px] mt-[60px] header">
+      <div className="max-w-[1200px] mx-auto flex gap-[30px] items-center mt-[-25px]">
+        <div className='border border-[blue] w-[150px] h-[35px] bg-[#007aff] rounded-[7px]'>
           <Dropdown
-            className="w-[30px] h-[25] ml-[5px] max-sm:w-[20px] mt-[5px] "
+            className="w-[30px] h-[25] ml-[10px]"
             menu={{ items }}
             placement="bottomRight"
           >
             <button className="flex items-center  bg-transparent text-white rounded gap-[10px]">
-              <img className="mt-[-5px]" src={Rasm_1} alt="Menu" />
-              <span className="text-white text-[18px] font-semibold  max-sm:text-[12px]">{t("header.header_text_29")}</span>
+              <img className="" src={Rasm_1} alt="Menu" />
+              <span className="text-white text-[18px] font-semibold mt-[5px]">{t("header.header_text_29")}</span>
             </button>
           </Dropdown>
         </div>
-        <div className='flex  gap-[20px] items-center flex-wrap '>
+        <div className='flex max-lg:flex-wrap gap-[30px]'>
+        <div className='flex  gap-[20px] items-center'>
           <ul className=''>
             <a className="logo" href="/">
-                <img className='w-[150px] h-[30px] mt-[15px] max-sm:w-[90px] ' src={Rasm_7} alt="logo" />
+                <img className='w-[150px] h-[35px] mt-[15px]' src={Rasm_7} alt="logo" />
             </a>
           </ul>
-          <ul className='mt-[20px] max-xl:hidden max-lg:block'>
-              <Link to="/onas" className=''>
-                  {t("header.header_text_31")}
-              </Link>
-            </ul>
         </div>
-        <div className='flex max-lg:flex-wrap gap-[30px]'>
-        <ul className='flex items-center justify-center max-lg:mt-[-50px]'>
-              <input className='border border-black rounded-[3px] w-[300px] h-[35px] mt-[20px] max-sm:w-[100px]' type="" placeholder={t("header.header_text_30")}/>
-             <li className='w-[80px] h-[35px] bg-[blue] mb-[-20px] ml-[-5px] rounded-tr-[5px] rounded-br-[5px] max-sm:w-[40px]'>
-                 <img className='ml-[30px] mt-[5px] max-sm:ml-[8px]' src="	https://clemar.uz/static/media/search.d2ffda43e103337068b589fd598257db.svg" alt="" />
+        <ul className='flex items-center justify-center'>
+              <input className='border border-black rounded-[3px] w-[300px] h-[35px] mt-[20px] max' type="" placeholder={t("header.header_text_30")}/>
+             <li className='w-[80px] h-[35px] bg-[blue] mb-[-20px] ml-[-5px] rounded-tr-[5px] rounded-br-[5px]'>
+                 <img className='ml-[30px] mt-[5px]' src="	https://clemar.uz/static/media/search.d2ffda43e103337068b589fd598257db.svg" alt="" />
              </li>
           </ul>
-           <ul className='mt-[28px] max-lg:hidden'>
+           <ul className='mt-[25px]'>
               <Link to="/onas" className=''>
                   {t("header.header_text_31")}
               </Link>
             </ul>
-          <div className='flex gap-[10px] mt-[5px] items-center max-lg:mt-[-50px]'>
-           <img className='w-[20px] h-[18px]' src={Rasm_9} alt="" />
+          <div className='flex gap-[10px] items-center'>
+           <img className='w-[25px] h-[23px]' src={Rasm_9} alt="" />
            <p className='h-[23px] mt-[20px]'>{t("header.header_text_32")}</p>
         </div>
         </div>
