@@ -2,6 +2,7 @@ import { createBrowserRouter } from "react-router-dom";
 import App from "../../App";
 import Onas from "../Onas/Onas";
 import Menu from "../Menu/Menu";
+import Hero from "../Hero/Hero";
 
 
 const router = createBrowserRouter ([
@@ -14,11 +15,11 @@ const router = createBrowserRouter ([
         element:<Onas/>
     },
     {
-        path: "/",
-        element: <App />,
+        path: "/",                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                   
+        element: <Hero/>,
         children:[
             {
-                path:"/",
+                path:"/menu",
                 element:<Menu/>
             },
         ]
