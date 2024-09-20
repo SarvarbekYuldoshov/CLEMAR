@@ -36,3 +36,4 @@ const Card = [
         text2:"4 ta mahsulotlar"        
     }   
 ]
+export default Card

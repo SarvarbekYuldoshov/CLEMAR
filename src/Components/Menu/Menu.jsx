@@ -1,9 +1,8 @@
 import React, { useState } from 'react';
-import Data from '../Data/Data';
 import useSharedStore from '../String/Store';
 import { useNavigate } from 'react-router-dom';
 
-const Menu = () => {
+const Card = () => {
   const { cards, setCards } = useSharedStore();
   const [adding, setAdding] = useState({});
 
@@ -17,6 +16,7 @@ const Menu = () => {
     }
   };
 
+  const navigate = useNavigate();
 
   return (
     <div>
@@ -61,4 +61,4 @@ const Menu = () => {
   );
 };
 
-export default Menu;
+export default Card;

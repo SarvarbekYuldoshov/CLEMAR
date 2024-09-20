@@ -4,6 +4,7 @@ import './App.css'
 import Layout from './Components/Layout/Layout'
 import Header from './Components/Header/Header'
 import Hero from './Components/Hero/Hero'
+import Menu from './Components/Menu/Menu'
 
 function App() {
   const [count, setCount] = useState(0)
@@ -14,6 +15,7 @@ function App() {
          <Layout/>
          <Header/>
          <Hero/>
+         <Menu/>
       </div>
     </>
   )
