@@ -12,27 +12,27 @@ const Card = [
          text2:"4 ta mahsulotlar"        
     },
     {
-        "id": 1,
-        text1:"Qog'oz mahsulotlari",
-        img:Rasm_1,
+        "id": 2,
+        text1:"Professional changyutgichlar",
+        img:Rasm_2,
         text2:"4 ta mahsulotlar"        
    },
     {
-         "id": 1,
-         text1:"Qog'oz mahsulotlari",
-         img:Rasm_1,
+         "id": 3,
+         text1:"Pol yuvish mashinalari",
+         img:Rasm_3,
          text2:"4 ta mahsulotlar"        
     },
     {
-        "id": 1,
-        text1:"Qog'oz mahsulotlari",
-        img:Rasm_1,
-        text2:"4 ta mahsulotlar"        
+        "id": 4,
+        text1:"Yuvish vositalari",
+        img:Rasm_4,
+        text2:"7 ta mahsulotlar"        
    },
    {
-    "id": 1,
-    text1:"Qog'oz mahsulotlari",
-    img:Rasm_1,
-    text2:"4 ta mahsulotlar"        
+        "id": 5,
+        text1:"Tozalash uskunalari",
+        img:Rasm_5,
+        text2:"4 ta mahsulotlar"        
     }   
 ]

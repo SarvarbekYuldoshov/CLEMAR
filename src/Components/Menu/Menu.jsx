@@ -2,8 +2,10 @@ import React from 'react'
 
 const Menu = () => {
   return (
-    <div>
-      
+    <div className=''>
+      <div className=''>
+        <h1 className=''>{}</h1>
+      </div>
     </div>
   )
 }
