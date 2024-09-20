@@ -9,7 +9,30 @@ const Card = [
          "id": 1,
          text1:"Qog'oz mahsulotlari",
          img:Rasm_1,
-         text2:"4 ta mahsulotlar"
-        
-    }
+         text2:"4 ta mahsulotlar"        
+    },
+    {
+        "id": 1,
+        text1:"Qog'oz mahsulotlari",
+        img:Rasm_1,
+        text2:"4 ta mahsulotlar"        
+   },
+    {
+         "id": 1,
+         text1:"Qog'oz mahsulotlari",
+         img:Rasm_1,
+         text2:"4 ta mahsulotlar"        
+    },
+    {
+        "id": 1,
+        text1:"Qog'oz mahsulotlari",
+        img:Rasm_1,
+        text2:"4 ta mahsulotlar"        
+   },
+   {
+    "id": 1,
+    text1:"Qog'oz mahsulotlari",
+    img:Rasm_1,
+    text2:"4 ta mahsulotlar"        
+    }   
 ]
