@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React, { useEffect, useState } from 'react';
 import { useTranslation } from 'react-i18next';
 import Rasm_1 from '../images/rasm12.png';
 import "./CardItem.css"
@@ -7,10 +7,13 @@ const CardItem = () => {
   const [photos,setPhotos] = useState([])
 
   const  getUser = () =>{
-    fetch('https://jsonplaceholder.typicode.com/photos').then(res=>res.json()).then(photo => {
+    fetch('https://clean.maxone.uz/api/categories').then(res=>res.json()).then(photo => {
       setPhotos(photo)
     })
   }
+  useEffect(()=>{
+    getUser()
+  },[])
   return (
     <div className=''>
       <div className='max-w-[1200px] mx-auto p-[20px]'>
