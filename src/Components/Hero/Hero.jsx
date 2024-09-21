@@ -11,7 +11,7 @@ import Rasm_2 from "../images/rasm11.png"
 const Hero = () => {
   return (
     <div className='hero-container mt-[150px]'>
-      <div className='swiper-container'>
+      <div className='max-w-[1200px] mx-auto p-[20px]'>
         <Swiper
           spaceBetween={30}
           centeredSlides={true}
