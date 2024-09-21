@@ -1,15 +1,50 @@
 import React from 'react';
-import './Menu.css';
+import { Swiper, SwiperSlide } from 'swiper/react';
+import 'swiper/css';
+import 'swiper/css/pagination';
+import 'swiper/css/navigation';
+import { Autoplay, Pagination, Navigation } from 'swiper/modules';
 import CardItem from '../Card/CardItem';
 
-const Menu = () => {
+export default function App() {
   return (
-    <div className='mt-[100px]'>
-      <div className='container mx-auto'>
-        <CardItem/>
-      </div>
-    </div>
+    <Swiper
+      spaceBetween={30}
+      centeredSlides={true}
+      autoplay={{
+        delay: 2500,
+        disableOnInteraction: false,
+      }}
+      pagination={{ clickable: true }}
+      navigation={true}
+      modules={[Autoplay, Pagination, Navigation]}
+      className="mySwiper"
+    >
+      {[...Array(9).keys()].map((_, index) => (
+        <SwiperSlide>
+          <CardItem/>
+        </SwiperSlide>
+        ,
+        <SwiperSlide>
+           <CardItem/>
+        </SwiperSlide>
+        ,
+        <SwiperSlide>
+           <CardItem/>
+        </SwiperSlide>
+        ,
+        <SwiperSlide>
+           <CardItem/>
+        </SwiperSlide>
+        ,
+        <SwiperSlide>
+           <CardItem/>
+        </SwiperSlide>
+        ,
+        <SwiperSlide>
+           <CardItem/>
+        </SwiperSlide>   
+      ))}
+    </Swiper>
   );
-};
-
-export default Menu;
+}

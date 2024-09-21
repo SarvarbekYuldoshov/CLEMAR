@@ -16,7 +16,7 @@ function App() {
          <Layout/>
          <Header/>
          <Hero/>
-         <Outlet/>
+        <Menu/>
       </div>
     </>
   )
