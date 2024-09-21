@@ -5,7 +5,7 @@ import Layout from './Components/Layout/Layout'
 import Header from './Components/Header/Header'
 import Hero from './Components/Hero/Hero'
 import Menu from './Components/Menu/Menu'
-import { Outlet } from 'react-router'
+import Section from './Components/Section/Section'
 
 function App() {
   const [count, setCount] = useState(0)
@@ -17,7 +17,7 @@ function App() {
          <Header/>
          <Hero/>
          <Menu/>
-         
+         <Section/>
       </div>
     </>
   )
