@@ -1,4 +1,3 @@
-
 import React, { useEffect, useState } from 'react';
 import { Swiper, SwiperSlide } from 'swiper/react';
 import 'swiper/css';
@@ -6,16 +5,19 @@ import 'swiper/css/pagination';
 import 'swiper/css/navigation';
 import { Autoplay, Pagination, Navigation } from 'swiper/modules';
 import { t } from 'i18next';
+
 const Section = () => {
   const [photos, setPhotos] = useState([]);
 
-  const getUser = () => {
-    fetch('https://clean.maxone.uz/api/categories')
-      .then(res => res.json())
-      .then(data => {
-        setPhotos(data);
-        localStorage.setItem('photos', JSON.stringify(data));
-      });
+  const getUser = async () => {
+    try {
+      const response = await fetch('https://clean.maxone.uz/api/sub_categories');
+      const data = await response.json();
+      setPhotos(data);
+      localStorage.setItem('photos', JSON.stringify(data));
+    } catch (error) {
+      console.error("Failed to fetch photos:", error);
+    }
   };
 
   useEffect(() => {
@@ -28,39 +30,46 @@ const Section = () => {
   }, []);
 
   return (
-    <div className=''>
-      <div className='max-w-[1200px] mx-auto p-[20px]'>
-      <h1 className=''>{t()}</h1>
-          <Swiper
-            spaceBetween={30}
-            centeredSlides={true}
-            autoplay={{
-              delay: 2500,
-              disableOnInteraction: false,
-            }}
-            navigation={true}
-            slidesPerView={5}
-            loop={true}
-            modules={[Autoplay, Pagination, Navigation]}
-            className="mySwiper"
-          >
-            {
-              photos.slice(0, 10).map((item, index) => (
-                <SwiperSlide key={index}>
-                    <div className=''>
-                        <ul className='card-list w-[250px] h-[270px] border border-[#cbcbce] shadow-[0_0_5px_0_rgba(0,0,0,0.2)] justify-center rounded-[10px]'>
-                            <img className='w-[220px] h-[160px] mt-[50px] ml-[10px] ' src={item.image} alt="" />
-                        </ul>
-
-                    </div>
-                </SwiperSlide>
-              ))
-            }
-          </Swiper>
+    <div className="bg-white py-10">
+      <div className="max-w-[1200px] mx-auto p-[20px]">
+        <h1 className="text-3xl font-bold text-center mb-8">{t('Your Title Here')}</h1>
+        <Swiper
+          spaceBetween={30}
+          centeredSlides={true}
+          autoplay={{
+            delay: 2500,
+            disableOnInteraction: false,
+          }}
+          navigation={true}
+          pagination={{ clickable: true }}
+          slidesPerView={4}
+          loop={true}
+          modules={[Autoplay, Pagination, Navigation]}
+          className="mySwiper"
+          breakpoints={{
+            1024: { slidesPerView: 5 },
+            768: { slidesPerView: 3 },
+            640: { slidesPerView: 2 },
+            320: { slidesPerView: 1 },
+          }}
+        >
+          {photos.slice(0, 10).map((item, index) => (
+            <SwiperSlide key={index}>
+              <div className="card-wrapper flex justify-center">
+                <div className="card-list w-[240px] h-[300px] border border-[#cbcbce] shadow-lg rounded-[10px] overflow-hidden">
+                  <img
+                    className="w-[250px] h-[160px] object-cover"
+                    src={item.image}
+                    alt={`Item ${index + 1}`}
+                  />
+                </div>
+              </div>
+            </SwiperSlide>
+          ))}
+        </Swiper>
       </div>
     </div>
-  )
-}
+  );
+};
 
-export default Section
-
+export default Section;
