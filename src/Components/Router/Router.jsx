@@ -14,16 +14,6 @@ const router = createBrowserRouter ([
         path:"/onas",
         element:<Onas/>
     },
-    {
-        path: "/",                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                   
-        element: <Hero/>,
-        children:[
-            {
-                path:"/menu",
-                element:<Menu/>
-            },
-        ]
-    },
 
 ])
 

@@ -5,6 +5,7 @@ import Layout from './Components/Layout/Layout'
 import Header from './Components/Header/Header'
 import Hero from './Components/Hero/Hero'
 import Menu from './Components/Menu/Menu'
+import { Outlet } from 'react-router'
 
 function App() {
   const [count, setCount] = useState(0)
@@ -15,6 +16,7 @@ function App() {
          <Layout/>
          <Header/>
          <Hero/>
+         <Outlet/>
       </div>
     </>
   )
