@@ -7,6 +7,7 @@ import { Autoplay, Pagination, Navigation } from 'swiper/modules';
 import CardItem from '../Card/CardItem';
 
 export default function App() {
+
   return (
     <Swiper
       spaceBetween={30}
@@ -15,35 +16,16 @@ export default function App() {
         delay: 2500,
         disableOnInteraction: false,
       }}
-      pagination={{ clickable: true }}
       navigation={true}
+      slidesPerView={5}
+      loop={true}
       modules={[Autoplay, Pagination, Navigation]}
       className="mySwiper"
     >
       {[...Array(9).keys()].map((_, index) => (
         <SwiperSlide>
-          <CardItem/>
+          
         </SwiperSlide>
-        ,
-        <SwiperSlide>
-           <CardItem/>
-        </SwiperSlide>
-        ,
-        <SwiperSlide>
-           <CardItem/>
-        </SwiperSlide>
-        ,
-        <SwiperSlide>
-           <CardItem/>
-        </SwiperSlide>
-        ,
-        <SwiperSlide>
-           <CardItem/>
-        </SwiperSlide>
-        ,
-        <SwiperSlide>
-           <CardItem/>
-        </SwiperSlide>   
       ))}
     </Swiper>
   );

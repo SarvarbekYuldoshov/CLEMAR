@@ -1,10 +1,12 @@
-import React from 'react';
+import React, { useState } from 'react';
 import { useTranslation } from 'react-i18next';
 import Rasm_1 from '../images/rasm12.png';
 import "./CardItem.css"
 const CardItem = () => {
   const { t } = useTranslation();
+  const [photos,setPhotos] = useState([])
 
+  
   return (
     <div className=''>
       <div className='max-w-[1200px] mx-auto p-[20px]'>
