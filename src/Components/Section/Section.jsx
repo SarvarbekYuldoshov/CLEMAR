@@ -55,10 +55,10 @@ const Section = () => {
         >
           {photos.slice(0, 10).map((item, index) => (
             <SwiperSlide key={index}>
-              <div className="card-wrapper flex justify-center">
-                <div className="card-list w-[240px] h-[300px] border border-[#cbcbce] shadow-lg rounded-[10px] overflow-hidden">
+              <div className="card-wrapper flex justify-center items-center">
+                <div className="card-list w-[240px] h-[300px] border border-[#cbcbce] shadow-lg rounded-[10px] overflow-hidden flex justify-center items-center">
                   <img
-                    className="w-[250px] h-[160px] object-cover"
+                    className="w-[220px] h-[160px] object-cover"
                     src={item.image}
                     alt={`Item ${index + 1}`}
                   />

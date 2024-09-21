@@ -76,5 +76,8 @@
         "menu_text_6":"Tozalash uskunalari",
         "menu_text_7":"4 ta mahsulotlar",
         "menu_text_8":"7 ta mahsulotlar"
-    }                           
+    },
+    "section":{
+        "section_text_1":"Eng zo'r mahsulotlar"
+    }                          
 }
