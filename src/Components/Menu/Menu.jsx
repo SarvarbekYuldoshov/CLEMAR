@@ -4,9 +4,11 @@ import 'swiper/css';
 import 'swiper/css/pagination';
 import 'swiper/css/navigation';
 import { Autoplay, Pagination, Navigation } from 'swiper/modules';
+import { useTranslation } from 'react-i18next';
 
 export default function App() {
   const [photos, setPhotos] = useState([]);
+  const { t } = useTranslation();
 
   const getUser = () => {
     fetch('https://clean.maxone.uz/api/categories')
@@ -27,8 +29,9 @@ export default function App() {
   }, []);
 
   return (
-    <div className=''>
-      <h1 className=''></h1>
+    <>
+    <div className='max-w-[1200px] mx-auto p-[20px]'>
+      <h1 className=''>{t("menu.menu_text_1")}</h1>
     <Swiper
       spaceBetween={30}
       centeredSlides={true}
@@ -56,5 +59,6 @@ export default function App() {
       }
     </Swiper>
     </div>
+    </>
   );
 }
