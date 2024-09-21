@@ -5,9 +5,11 @@ import 'swiper/css/pagination';
 import 'swiper/css/navigation';
 import { Autoplay, Pagination, Navigation } from 'swiper/modules';
 import { t } from 'i18next';
+import { useTranslation } from 'react-i18next';
 
 const Section = () => {
   const [photos, setPhotos] = useState([]);
+  const { t } = useTranslation();
 
   const getUser = async () => {
     try {
@@ -32,7 +34,7 @@ const Section = () => {
   return (
     <div className="bg-white py-10">
       <div className="max-w-[1200px] mx-auto p-[20px]">
-        <h1 className="text-3xl font-bold text-center mb-8">{t('Your Title Here')}</h1>
+        <h1 className="text-3xl font-bold  mb-8">{t('section.section_text_1')}</h1>
         <Swiper
           spaceBetween={30}
           centeredSlides={true}
