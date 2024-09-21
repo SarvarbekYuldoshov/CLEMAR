@@ -6,7 +6,11 @@ const CardItem = () => {
   const { t } = useTranslation();
   const [photos,setPhotos] = useState([])
 
-  
+  const  getUser = () =>{
+    fetch('https://jsonplaceholder.typicode.com/photos').then(res=>res.json()).then(photo => {
+      setPhotos(photo)
+    })
+  }
   return (
     <div className=''>
       <div className='max-w-[1200px] mx-auto p-[20px]'>
