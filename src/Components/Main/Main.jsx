@@ -30,7 +30,7 @@ const Main = () => {
         {photos.length > 0 ? (
           photos.map((item) => (
             <ul key={item.id} className='card-list w-[280px] h-[350px] border border-[#cbcbce] shadow-[0_0_5px_0_rgba(0,0,0,0.2)] justify-center rounded-[10px] mb-[20px]'>
-              <h1 className='mt-[15px] ml-[15px] font-montserrat text-[1.2vw] no-underline font-bold'>
+              <h1 className='mt-[16px] ml-[15px] font-montserrat text-[1.2vw] no-underline font-bold'>
                 {item.name_uz}
               </h1>
               <img className='w-[250px] h-[230px] mt-[50px] ml-[10px]' src={item.image} alt={item.name_uz} />
