@@ -26,7 +26,7 @@ const Main = () => {
 
   return (
     <div>
-      <div className='max-w-[1200px] mx-auto p-[20px]'>
+      <div className='max-w-[1200px] mx-auto p-[20px] flex'>
         {photos.length > 0 ? (
           photos.map((item) => (
             <ul key={item.id} className='card-list w-[280px] h-[350px] border border-[#cbcbce] shadow-[0_0_5px_0_rgba(0,0,0,0.2)] justify-center rounded-[10px] mb-[20px]'>
