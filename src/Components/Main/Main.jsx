@@ -1,6 +1,26 @@
 import React from 'react'
 
 const Main = () => {
+  const [photos, setPhotos] = useState([]);
+  const { t } = useTranslation();
+
+  const getUser = () => {
+    fetch('https://clean.maxone.uz/api/categories')
+      .then(res => res.json())
+      .then(data => {
+        setPhotos(data);
+        localStorage.setItem('photos', JSON.stringify(data));
+      });
+  };
+
+  useEffect(() => {
+    const storedPhotos = localStorage.getItem('photos');
+    if (storedPhotos) {
+      setPhotos(JSON.parse(storedPhotos));
+    } else {
+      getUser();
+    }
+  }, []);
   return (
     <div className=''>
         <div className='max-w-[1200px] mx-auto p-[20px]'>
