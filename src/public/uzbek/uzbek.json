@@ -108,5 +108,12 @@
         "blue_text_4":"Clemardagi aktsiyalar",
         "blue_text_5":"Bizning maxsus takliflarimiz va chegirmalarimiz haqida bilib oling! Clemarning barcha foydali imkoniyatlaridan xabardor bo'lish uchun Aktsiyalar bo'limiga tashrif buyuring. Xaridlarni tejang va qo'shimcha bonuslarga ega bo'ling. Sizni ijtimoiy tarmoqlarimizda bundanda kattaroq syurprizlar uchun kutamiz",
         "blue_text_6":"Batafsil"
-    }                
+    }  ,
+    "bollen":{
+        "bollen_text_1":"Biz bilan bog'lanish",
+        "bollen_text_2":"Telefon raqamingizni qoldiring va menejerlarimiz tez orada siz bilan bog'lanadi",
+        "bollen_text_3":"Ism",
+        "bollen_text_4":"Telefon raqami",
+        "bollen_text_5":"Sizning xabaringiz"
+    }              
 }
