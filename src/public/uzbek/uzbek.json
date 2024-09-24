@@ -99,5 +99,14 @@
     } ,
     "Lelfite":{
         "Lelfite_text_1":"Bizga ishonganlar"
-    }                 
+    } 
+    ,
+    "blue":{
+        "blue_text_1":"Bizning yangiliklar",
+        "blue_text_2":"Clemardan bo'lib to'lash rejasi",
+        "blue_text_3":"Siz professional uskunani sotib olishni xohlaysizmi, lekin to'liq miqdorni ajratishga tayyor emasmisiz? Bizda siz uchun yechim bor! Bizning qulay bo'lib to'lash tizimimiz haqida bilib oling, bu sizga kerakli uskunani hoziroq sotib olish va uni bosqichma-bosqich to'lash imkonini beradi. Barcha tafsilotlarni bilish va bugun buyurtma berish uchun “Toʻlov” boʻlimiga tashrif buyuring. Clemar bilan xaridingizni yanada arzonroq qiling!",
+        "blue_text_4":"Clemardagi aktsiyalar",
+        "blue_text_5":"Bizning maxsus takliflarimiz va chegirmalarimiz haqida bilib oling! Clemarning barcha foydali imkoniyatlaridan xabardor bo'lish uchun Aktsiyalar bo'limiga tashrif buyuring. Xaridlarni tejang va qo'shimcha bonuslarga ega bo'ling. Sizni ijtimoiy tarmoqlarimizda bundanda kattaroq syurprizlar uchun kutamiz",
+        "blue_text_6":"Batafsil"
+    }                
 }
