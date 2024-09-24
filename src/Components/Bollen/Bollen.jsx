@@ -1,15 +1,11 @@
 import React, { useState, useEffect } from 'react';
 import { useTranslation } from 'react-i18next';
-import { Form, Input, Button, message } from 'antd'; // Add missing imports
+import { Form, Input, Button, message } from 'antd';
 
 const Bollen = () => {
-  const { t, i18n } = useTranslation(); // Fix useTranslation invocation
+  const { t, i18n } = useTranslation();
   const [form] = Form.useForm();
   const [open, setOpen] = useState(false);
-
-  const handleLanguageChange = (e) => {
-    i18n.changeLanguage(e.target.value); // Fix language change function
-  };
 
   useEffect(() => {
     const savedName = localStorage.getItem('name');
@@ -79,38 +75,17 @@ const Bollen = () => {
           <h1 className='text-black font-bold text-[30px]'>{t("bollen.bollen_text_1")}</h1>
           <p>{t("bollen.bollen_text_2")}</p>
           <Form form={form} layout="vertical">
-            <Form.Item
-              label={t("layout.layout_btn_3")}
-              name="name"
-              rules={[
-                { required: true, message: t("layout.layout_text_11") },
-                { min: 5, message: t("layout.layout_text_8") }
-              ]}
-            >
-              <Input className='w-full h-[50px]' placeholder={t("layout.layout_btn_6")} />
+            <Form.Item>
+              <Input className='w-full h-[50px] bg-gray-200' /> 
             </Form.Item>
-            <Form.Item
-              label={t("layout.layout_btn_4")}
-              name="surname"
-              rules={[
-                { required: true, message: t("layout.layout_text_12") },
-                { min: 5, message: t("layout.layout_text_9") }
-              ]}
-            >
-              <Input className='w-full h-[50px]' placeholder={t("layout.layout_btn_7")} />
+            <Form.Item>
+              <Input className='w-[1100px] h-[50px] bg-gray-200' /> 
             </Form.Item>
-            <Form.Item
-              label={t("layout.layout_btn_5")}
-              name="number"
-              rules={[
-                { required: true, message: t("layout.layout_text_12") },
-                { pattern: /^\+998\d{9}$/, message: t("layout.layout_text_10") }
-              ]}
-            >
-              <Input className='w-full h-[50px]' placeholder='+998' />
+            <Form.Item>
+              <Input className='w-[1100px] h-[50px] bg-gray-200'/> 
             </Form.Item>
-            <Button className='w-full h-[50px]' onClick={sendMessage} type="primary">
-              {t("layout.layout_btn_send")} {/* Assuming "Yuborish" means "Send" */}
+            <Button className='w-[1100px] h-[50px]' onClick={sendMessage} type="primary">
+              {t("bollen.bollen_text_5")}
             </Button>
           </Form>
         </ul>
