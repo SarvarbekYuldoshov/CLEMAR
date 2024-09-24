@@ -88,5 +88,13 @@
           "main_text_5": "0 UZS",
           "main_text_6": "Buy",
           "main_text_7": "Send"  
-      }
+      },
+      "choose": {
+        "choose_text_1": "Why do they choose us?",
+        "choose_text_2": "Service",
+        "choose_text_3": "Spare parts for goods",
+        "choose_text_4": "Renting goods",
+        "choose_text_5": "Vacuum cleaner accessories"
+    }
+    
   }
