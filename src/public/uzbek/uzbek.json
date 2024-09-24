@@ -96,5 +96,8 @@
         "choose_text_3":"Tovarlarning ehtiyot qismlari",
         "choose_text_4":"Tovarlarni ijaraga berish",
         "choose_text_5":"Chang yutgich aksessuarlari"
-    }                  
+    } ,
+    "Lelfite":{
+        "Lelfite_text_1":"Bizga ishonganlar"
+    }                 
 }
