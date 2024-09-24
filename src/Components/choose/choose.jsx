@@ -2,8 +2,10 @@ import React from 'react'
 
 const choose = () => {
   return (
-    <div>
-      
+    <div className=''>
+      <div className='max-w-[1200px] mx-auto p-[20px]'>
+
+      </div>
     </div>
   )
 }
