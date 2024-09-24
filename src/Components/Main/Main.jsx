@@ -75,16 +75,16 @@ const Main = () => {
   };
   return (
     <div>
-      <div className='max-w-[1200px] mx-auto p-[20px] flex'>
+      <div className='max-w-[1200px] mx-auto p-[20px] flex gap-[20px]'>
 
 {/* ------------------------------------------------Birinchi qism------------------------------------------------------------------ */}
 
-         <ul className='w-[250px] h-[380px] border border-black rounded-[10px] relative'>
-          <li className='border border-black w-[200px] h-[220px]  justify-center flex rounded-[10px] ml-[25px] mt-[20px]'>
+         <ul className='w-[280px] h-[380px] border border-black rounded-[10px] relative'>
+          <li className='border border-black w-[240px] h-[220px]  justify-center flex rounded-[10px] ml-[20px] mt-[20px]'>
             <img className='w-[20px] h-[25px] absolute right-[40px] top-[30px]' src="https://clemar.uz/static/media/heart2.e56530df0538112dcc9f915738876ee2.svg" alt="" />
             <img className='w-[150px] h-[150px] mt-[20px]' src={Rasm_1} alt="" />
           </li>
-          <p className='font-light text-lg text-[15px] ml-[10px] mt-[5px]'>{t("main.main_text_1")}</p>
+          <p className='font-light text-lg text-[12px] ml-[10px] mt-[5px]'>{t("main.main_text_1")}</p>
           <p className='font-bold text-black text-lg text-[15px] ml-[10px]'>{t("main.main_text_5")}</p>
 
 {/*-------------------------------------------- Xabar yuborish qismi --------------------------------------------------------------- */}
@@ -129,14 +129,13 @@ const Main = () => {
 
 {/* ----------------------------------------------------------Ikkinchi qism---------------------------------------------------------- */}
 
-         <ul className='w-[250px] h-[380px] border border-black rounded-[10px] relative'>
-          <li className='border border-black w-[200px] h-[220px]  justify-center flex rounded-[10px] ml-[25px] mt-[20px]'>
+        <ul className='w-[280px] h-[380px] border border-black rounded-[10px] relative'>
+          <li className='border border-black w-[240px] h-[220px]  justify-center flex rounded-[10px] ml-[20px] mt-[20px]'>
             <img className='w-[20px] h-[25px] absolute right-[40px] top-[30px]' src="https://clemar.uz/static/media/heart2.e56530df0538112dcc9f915738876ee2.svg" alt="" />
-            <img className='w-[150px] h-[150px] mt-[20px]' src={Rasm_1} alt="" />
+            <img className='w-[150px] h-[150px] mt-[20px]' src={Rasm_2} alt="" />
           </li>
-          <p className='font-light text-lg text-[15px] ml-[10px] mt-[5px]'>{t("main.main_text_1")}</p>
+          <p className='font-light text-lg text-[12px] ml-[10px] mt-[5px]'>{t("main.main_text_2")}</p>
           <p className='font-bold text-black text-lg text-[15px] ml-[10px]'>{t("main.main_text_5")}</p>
-
 {/*-------------------------------------------------------- Xabar yuborish qismi----------------------------------------------------  */}
 
           <li className='flex justify-center'>
@@ -179,14 +178,13 @@ const Main = () => {
 
 {/* -----------------------------------------------------------------Uchinchi qism----------------------------------------------- */}
 
-         <ul className='w-[250px] h-[380px] border border-black rounded-[10px] relative'>
-          <li className='border border-black w-[200px] h-[220px]  justify-center flex rounded-[10px] ml-[25px] mt-[20px]'>
+        <ul className='w-[280px] h-[380px] border border-black rounded-[10px] relative'>
+          <li className='border border-black w-[240px] h-[220px]  justify-center flex rounded-[10px] ml-[20px] mt-[20px]'>
             <img className='w-[20px] h-[25px] absolute right-[40px] top-[30px]' src="https://clemar.uz/static/media/heart2.e56530df0538112dcc9f915738876ee2.svg" alt="" />
-            <img className='w-[150px] h-[150px] mt-[20px]' src={Rasm_1} alt="" />
+            <img className='w-[150px] h-[150px] mt-[20px]' src={Rasm_3} alt="" />
           </li>
-          <p className='font-light text-lg text-[15px] ml-[10px] mt-[5px]'>{t("main.main_text_1")}</p>
-          <p className='font-bold text-black text-lg text-[15px] ml-[10px]'>{t("main.main_text_5")}</p>
-
+          <p className='font-light text-lg text-[12px] ml-[10px] mt-[5px]'>{t("main.main_text_3")}</p>
+          <p className='font-bold text-black text-lg text-[15px] ml-[10px]'>{t("main.main_text_5")}</p> 
 {/*-------------------------------------------------------------- Xabar yuborish qismi------------------------------------------  */}
 
           <li className='flex justify-center'>
@@ -229,14 +227,13 @@ const Main = () => {
 
 {/* ----------------------------------------------------Turtinvhi Qism--------------------------------------------------------------- */}
 
-         <ul className='w-[250px] h-[380px] border border-black rounded-[10px] relative'>
-          <li className='border border-black w-[200px] h-[220px]  justify-center flex rounded-[10px] ml-[25px] mt-[20px]'>
+          <ul className='w-[280px] h-[380px] border border-black rounded-[10px] relative'>
+          <li className='border border-black w-[240px] h-[220px]  justify-center flex rounded-[10px] ml-[20px] mt-[20px]'>
             <img className='w-[20px] h-[25px] absolute right-[40px] top-[30px]' src="https://clemar.uz/static/media/heart2.e56530df0538112dcc9f915738876ee2.svg" alt="" />
-            <img className='w-[150px] h-[150px] mt-[20px]' src={Rasm_1} alt="" />
+            <img className='w-[150px] h-[150px] mt-[20px]' src={Rasm_4} alt="" />
           </li>
-          <p className='font-light text-lg text-[15px] ml-[10px] mt-[5px]'>{t("main.main_text_1")}</p>
+          <p className='font-light text-lg text-[12px] ml-[10px] mt-[5px]'>{t("main.main_text_4")}</p>
           <p className='font-bold text-black text-lg text-[15px] ml-[10px]'>{t("main.main_text_5")}</p>
-
 {/*--------------------------------------------------- Xabar yuborish qismi---------------------------------------------------------  */}
 
           <li className='flex justify-center'>
