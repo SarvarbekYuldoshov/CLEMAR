@@ -119,7 +119,7 @@ const Main = () => {
                   <Input className='w-full h-[50px]' placeholder='+998' />
                 </Form.Item>
                 <Button className='w-full h-[50px]' onClick={sendMessage} type="primary">
-                  Send
+                {t("main.main_text_7")}
                 </Button>
               </Form>
             </Modal>
@@ -161,7 +161,7 @@ const Main = () => {
                   <Input className='w-full h-[50px]' placeholder='+998' />
                 </Form.Item>
                 <Button className='w-full h-[50px]' onClick={sendMessage} type="primary">
-                  Send
+                {t("main.main_text_7")}
                 </Button>
               </Form>
             </Modal>
@@ -175,8 +175,6 @@ const Main = () => {
           </li>
           <p className='font-light text-lg text-[12px] ml-[10px] mt-[5px]'>{t("main.main_text_3")}</p>
           <p className='font-bold text-black text-lg text-[15px] ml-[10px]'>{t("main.main_text_5")}</p>
-
-          {/* Send Message section */}
           <li className='flex justify-center'>
             <Button className='text-[blue] bg-[#e0e4e9] w-[200px] h-[40px] rounded-[5px] text-[15x] items-center hover:transition-transform duration-500 hover:scale-110 max-md:hidden' onClick={showModal}>
               {t("main.main_text_6")}
@@ -205,7 +203,7 @@ const Main = () => {
                   <Input className='w-full h-[50px]' placeholder='+998' />
                 </Form.Item>
                 <Button className='w-full h-[50px]' onClick={sendMessage} type="primary">
-                  Send
+                {t("main.main_text_7")}
                 </Button>
               </Form>
             </Modal>
@@ -246,7 +244,7 @@ const Main = () => {
                   <Input className='w-full h-[50px]' placeholder='+998' />
                 </Form.Item>
                 <Button className='w-full h-[50px]' onClick={sendMessage} type="primary">
-                  Send
+                  {t("main.main_text_7")}
                 </Button>
               </Form>
             </Modal>
