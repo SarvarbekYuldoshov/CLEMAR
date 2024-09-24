@@ -76,12 +76,169 @@ const Main = () => {
   return (
     <div>
       <div className='max-w-[1200px] mx-auto p-[20px] flex'>
-         <ul className='w-[250px] h-[375px] border border-black rounded-[10px]'>
-          <li className='border border-black w-[200px] h-[200px]  justify-center flex rounded-[10px] ml-[25px] mt-[20px]'>
+
+{/* ------------------------------------------------Birinchi qism------------------------------------------------------------------ */}
+
+         <ul className='w-[250px] h-[380px] border border-black rounded-[10px] relative'>
+          <li className='border border-black w-[200px] h-[220px]  justify-center flex rounded-[10px] ml-[25px] mt-[20px]'>
+            <img className='w-[20px] h-[25px] absolute right-[40px] top-[30px]' src="https://clemar.uz/static/media/heart2.e56530df0538112dcc9f915738876ee2.svg" alt="" />
             <img className='w-[150px] h-[150px] mt-[20px]' src={Rasm_1} alt="" />
           </li>
-          <p className='font-light text-lg text-[15px] ml-[10px] mt-[20px]'>{t("main.main_text_1")}</p>
+          <p className='font-light text-lg text-[15px] ml-[10px] mt-[5px]'>{t("main.main_text_1")}</p>
           <p className='font-bold text-black text-lg text-[15px] ml-[10px]'>{t("main.main_text_5")}</p>
+
+{/*-------------------------------------------- Xabar yuborish qismi --------------------------------------------------------------- */}
+
+          <li className='flex justify-center'>
+          <Button className='text-[blue] bg-[#e0e4e9] w-[200px] h-[40px] rounded-[5px] text-[15x] items-center hover:transition-transform duration-500 hover:scale-110 max-md:hidden' onClick={showModal}>
+            {t("main.main_text_6")}
+            </Button>
+
+            <Modal open={open} footer={null} onCancel={closeModal}>
+              <h1 className='flex items-center justify-center text-[30px]'>{t("layout.layout_btn_1")}</h1>
+              <p className='justify-center text-[20px] text-[blue]'>{t("layout.layout_btn_2")}</p>
+              <Form form={form} layout="vertical">
+                <Form.Item
+                  label={t("layout.layout_btn_3")}
+                  name="name"
+                  rules={[{ required: true, message: t("layout.layout_text_11")}, { min: 5, message: t("layout.layout_text_8") }]}
+                >
+                  <Input className='w-full h-[50px]' placeholder={t("layout.layout_btn_6")} />
+                </Form.Item>
+                <Form.Item
+                  label={t("layout.layout_btn_4")}
+                  name="surname"
+                  rules={[{ required: true, message: t("layout.layout_text_12") }, { min: 5, message: t("layout.layout_text_9") }]}
+                >
+                  <Input className='w-full h-[50px]' placeholder={t("layout.layout_btn_7")} />
+                </Form.Item>
+                <Form.Item
+                  label={t("layout.layout_btn_5")}
+                  name="number"
+                  rules={[{ required: true, message: t("layout.layout_text_12") }, { pattern: /^\+998\d{9}$/, message: t("layout.layout_text_10") }]}
+                >
+                  <Input className='w-full h-[50px]' placeholder='+998' />
+                </Form.Item>
+                <Button className='w-full h-[50px]' onClick={sendMessage} type="primary">
+                  Yuborish
+                </Button>
+              </Form>
+            </Modal>
+            </li>
+         </ul>
+
+{/* ----------------------------------------------------------Ikkinchi qism---------------------------------------------------------- */}
+
+         <ul className='w-[250px] h-[380px] border border-black rounded-[10px] relative'>
+          <li className='border border-black w-[200px] h-[220px]  justify-center flex rounded-[10px] ml-[25px] mt-[20px]'>
+            <img className='w-[20px] h-[25px] absolute right-[40px] top-[30px]' src="https://clemar.uz/static/media/heart2.e56530df0538112dcc9f915738876ee2.svg" alt="" />
+            <img className='w-[150px] h-[150px] mt-[20px]' src={Rasm_1} alt="" />
+          </li>
+          <p className='font-light text-lg text-[15px] ml-[10px] mt-[5px]'>{t("main.main_text_1")}</p>
+          <p className='font-bold text-black text-lg text-[15px] ml-[10px]'>{t("main.main_text_5")}</p>
+
+{/*-------------------------------------------------------- Xabar yuborish qismi----------------------------------------------------  */}
+
+          <li className='flex justify-center'>
+          <Button className='text-[blue] bg-[#e0e4e9] w-[200px] h-[40px] rounded-[5px] text-[15x] items-center hover:transition-transform duration-500 hover:scale-110 max-md:hidden' onClick={showModal}>
+            {t("main.main_text_6")}
+            </Button>
+
+            <Modal open={open} footer={null} onCancel={closeModal}>
+              <h1 className='flex items-center justify-center text-[30px]'>{t("layout.layout_btn_1")}</h1>
+              <p className='justify-center text-[20px] text-[blue]'>{t("layout.layout_btn_2")}</p>
+              <Form form={form} layout="vertical">
+                <Form.Item
+                  label={t("layout.layout_btn_3")}
+                  name="name"
+                  rules={[{ required: true, message: t("layout.layout_text_11")}, { min: 5, message: t("layout.layout_text_8") }]}
+                >
+                  <Input className='w-full h-[50px]' placeholder={t("layout.layout_btn_6")} />
+                </Form.Item>
+                <Form.Item
+                  label={t("layout.layout_btn_4")}
+                  name="surname"
+                  rules={[{ required: true, message: t("layout.layout_text_12") }, { min: 5, message: t("layout.layout_text_9") }]}
+                >
+                  <Input className='w-full h-[50px]' placeholder={t("layout.layout_btn_7")} />
+                </Form.Item>
+                <Form.Item
+                  label={t("layout.layout_btn_5")}
+                  name="number"
+                  rules={[{ required: true, message: t("layout.layout_text_12") }, { pattern: /^\+998\d{9}$/, message: t("layout.layout_text_10") }]}
+                >
+                  <Input className='w-full h-[50px]' placeholder='+998' />
+                </Form.Item>
+                <Button className='w-full h-[50px]' onClick={sendMessage} type="primary">
+                  Yuborish
+                </Button>
+              </Form>
+            </Modal>
+            </li>
+         </ul>
+
+{/* -----------------------------------------------------------------Uchinchi qism----------------------------------------------- */}
+
+         <ul className='w-[250px] h-[380px] border border-black rounded-[10px] relative'>
+          <li className='border border-black w-[200px] h-[220px]  justify-center flex rounded-[10px] ml-[25px] mt-[20px]'>
+            <img className='w-[20px] h-[25px] absolute right-[40px] top-[30px]' src="https://clemar.uz/static/media/heart2.e56530df0538112dcc9f915738876ee2.svg" alt="" />
+            <img className='w-[150px] h-[150px] mt-[20px]' src={Rasm_1} alt="" />
+          </li>
+          <p className='font-light text-lg text-[15px] ml-[10px] mt-[5px]'>{t("main.main_text_1")}</p>
+          <p className='font-bold text-black text-lg text-[15px] ml-[10px]'>{t("main.main_text_5")}</p>
+
+{/*-------------------------------------------------------------- Xabar yuborish qismi------------------------------------------  */}
+
+          <li className='flex justify-center'>
+          <Button className='text-[blue] bg-[#e0e4e9] w-[200px] h-[40px] rounded-[5px] text-[15x] items-center hover:transition-transform duration-500 hover:scale-110 max-md:hidden' onClick={showModal}>
+            {t("main.main_text_6")}
+            </Button>
+
+            <Modal open={open} footer={null} onCancel={closeModal}>
+              <h1 className='flex items-center justify-center text-[30px]'>{t("layout.layout_btn_1")}</h1>
+              <p className='justify-center text-[20px] text-[blue]'>{t("layout.layout_btn_2")}</p>
+              <Form form={form} layout="vertical">
+                <Form.Item
+                  label={t("layout.layout_btn_3")}
+                  name="name"
+                  rules={[{ required: true, message: t("layout.layout_text_11")}, { min: 5, message: t("layout.layout_text_8") }]}
+                >
+                  <Input className='w-full h-[50px]' placeholder={t("layout.layout_btn_6")} />
+                </Form.Item>
+                <Form.Item
+                  label={t("layout.layout_btn_4")}
+                  name="surname"
+                  rules={[{ required: true, message: t("layout.layout_text_12") }, { min: 5, message: t("layout.layout_text_9") }]}
+                >
+                  <Input className='w-full h-[50px]' placeholder={t("layout.layout_btn_7")} />
+                </Form.Item>
+                <Form.Item
+                  label={t("layout.layout_btn_5")}
+                  name="number"
+                  rules={[{ required: true, message: t("layout.layout_text_12") }, { pattern: /^\+998\d{9}$/, message: t("layout.layout_text_10") }]}
+                >
+                  <Input className='w-full h-[50px]' placeholder='+998' />
+                </Form.Item>
+                <Button className='w-full h-[50px]' onClick={sendMessage} type="primary">
+                  Yuborish
+                </Button>
+              </Form>
+            </Modal>
+            </li>
+         </ul>
+
+{/* ----------------------------------------------------Turtinvhi Qism--------------------------------------------------------------- */}
+
+         <ul className='w-[250px] h-[380px] border border-black rounded-[10px] relative'>
+          <li className='border border-black w-[200px] h-[220px]  justify-center flex rounded-[10px] ml-[25px] mt-[20px]'>
+            <img className='w-[20px] h-[25px] absolute right-[40px] top-[30px]' src="https://clemar.uz/static/media/heart2.e56530df0538112dcc9f915738876ee2.svg" alt="" />
+            <img className='w-[150px] h-[150px] mt-[20px]' src={Rasm_1} alt="" />
+          </li>
+          <p className='font-light text-lg text-[15px] ml-[10px] mt-[5px]'>{t("main.main_text_1")}</p>
+          <p className='font-bold text-black text-lg text-[15px] ml-[10px]'>{t("main.main_text_5")}</p>
+
+{/*--------------------------------------------------- Xabar yuborish qismi---------------------------------------------------------  */}
+
           <li className='flex justify-center'>
           <Button className='text-[blue] bg-[#e0e4e9] w-[200px] h-[40px] rounded-[5px] text-[15x] items-center hover:transition-transform duration-500 hover:scale-110 max-md:hidden' onClick={showModal}>
             {t("main.main_text_6")}
