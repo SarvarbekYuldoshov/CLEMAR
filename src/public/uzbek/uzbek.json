@@ -119,5 +119,23 @@
         "bollen_text_7":"Ismingizni tugri kiriting",
         "bollen_text_8":"Fameliyangizni tugri kiriting",
         "bollen_text_9":"Nomerizi tugri kititing"
-    }              
+    } ,
+    "footer":{
+        "footer_text_1":"Clemar - O'zbekistonda 25 dan ortiq jahon brendlarining distribyutori",
+        "footer_text_2":"Aloqa uchun",
+        "footer_text_3":" +998942390426",
+        "footer_text_4":"Bizning manzil",
+        "footer_text_5":"Mahsulotlar",
+        "footer_text_6":"Qog'oz mahsulotlari",
+        "footer_text_7":"Professional changyutgichlar",
+        "footer_text_8":"Pol yuvish mashinalari",
+        "footer_text_9":"Yuvish vositalari",
+        "footer_text_10":"Ma`lumot",
+        "footer_text_11":"Biz haqimizda",
+        "footer_text_12":"Kategoriyalar",
+        "footer_text_13":"Nega bizni tanlashadi? ",
+        "footer_text_14":"F.A.Q.",
+        "footer_text_15":"Toshkent shahar, Bunyodkor shoh ko'chasi",
+        "footer_text_16":"Xaritada ko’rish uchun shu yerga bosing"  
+    }             
 }

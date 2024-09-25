@@ -116,7 +116,26 @@
         "bollen_text_6": "Please enter your name correctly",
         "bollen_text_7": "Please enter your surname correctly",
         "bollen_text_8": "Please enter your phone number correctly"
-    }
+    },
+    "footer":
+    {
+      "footer_text_1": "Clemar - Distributor of more than 25 global brands in Uzbekistan",
+      "footer_text_2": "For contact",
+      "footer_text_3": "+998942390426",
+      "footer_text_4": "Our address",
+      "footer_text_5": "Products",
+      "footer_text_6": "Paper products",
+      "footer_text_7": "Professional vacuum cleaners",
+      "footer_text_8": "Floor cleaning machines",
+      "footer_text_9": "Cleaning agents",
+      "footer_text_10": "Information",
+      "footer_text_11": "About us",
+      "footer_text_12": "Categories",
+      "footer_text_13": "Why choose us?",
+      "footer_text_14": "F.A.Q.",
+      "footer_text_15": "Tashkent city, Bunyodkor avenue",
+      "footer_text_16": "Click here to view on map"
+  }
     
   
     
