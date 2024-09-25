@@ -52,7 +52,7 @@ const Header = () => {
       <div className="max-w-[1200px] mx-auto flex gap-[30px] items-center mt-[-25px] flex-wrap">
         <div className='border border-[blue] w-[150px] h-[35px] bg-[#007aff] rounded-[7px]'>
           <Dropdown
-            className="w-[30px] h-[25] ml-[10px]"
+            className="w-[30px] h-[26] ml-[10px]"
             menu={{ items }}
             placement="bottomRight"
           >
