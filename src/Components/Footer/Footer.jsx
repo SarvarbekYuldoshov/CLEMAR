@@ -72,8 +72,11 @@ const Footer = () => {
                 <li className='w-[250px] mt-[5px]'>
                     <a className='text-[#FFFF] text-[14px]' href="">{t("footer.footer_text_15")}</a>
                 </li>
-                <li className='w-[300px] mt-[45px]'>
+                <li className='w-[200px] mt-[45px]'>
                     <a className='text-[#FFFF] text-[14px]' href="">{t("footer.footer_text_16")}</a>
+                </li>
+                <li className='mt-[30px] '>
+                     <a href="https://yandex.ru/navi/?ll=69.220719,41.290161&amp;panorama%5Bpoint%5D=69.220719,41.290161&amp;panorama%5Bdirection%5D=227.914276,-0.865454&amp;panorama%5Bspan%5D=90.000000,90.000000&amp;panorama%5Bid%5D=1486659497_804360267_23_1571374783"  target="_blank" class="map round-[10px]"><img className='mt-[20px] rounded-[10px]' src="https://clemar.uz/static/media/map.30c444482438ea78ad82.jpg" alt="img" class="img"></img></a>
                 </li>
             </ul>
         </div>
