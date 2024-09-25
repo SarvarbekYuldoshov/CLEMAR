@@ -22,15 +22,15 @@ function App() {
       <div className='App'>
          <Layout/>
          <Header/>
-         <Hero/>
-         <Menu/>
-         <Section/>
-         <Main/>
-         <Cloos/>
-         <Lelfte/>
-         <Blue/>
-         <Bollen/>
-         <Footer/>
+         {/* <Hero/> */}
+         {/* <Menu/> */}
+         {/* <Section/> */}
+         {/* <Main/> */}
+         {/* <Cloos/> */}
+         {/* <Lelfte/> */}
+         {/* <Blue/> */}
+         {/* <Bollen/> */}
+         {/* <Footer/> */}
       </div>
     </>
   )

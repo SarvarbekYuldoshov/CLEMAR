@@ -49,7 +49,7 @@ const Header = () => {
 
   return (
     <div className="bg-white p-[20px] mt-[60px] header">
-      <div className="max-w-[1200px] mx-auto flex gap-[30px] items-center mt-[-25px]">
+      <div className="max-w-[1200px] mx-auto flex gap-[30px] items-center mt-[-25px] flex-wrap">
         <div className='border border-[blue] w-[150px] h-[35px] bg-[#007aff] rounded-[7px]'>
           <Dropdown
             className="w-[30px] h-[25] ml-[10px]"
@@ -62,7 +62,6 @@ const Header = () => {
             </button>
           </Dropdown>
         </div>
-        <div className='flex max-lg:flex-wrap gap-[30px]'>
         <div className='flex  gap-[20px] items-center'>
           <ul className=''>
             <a className="logo" href="/">
@@ -71,7 +70,7 @@ const Header = () => {
           </ul>
         </div>
         <ul className='flex items-center justify-center'>
-              <input className='border border-black rounded-[3px] w-[300px] h-[35px] mt-[20px] max' type="" placeholder={t("header.header_text_30")}/>
+              <input className='border border-black rounded-[3px] w-[280px] h-[35px] mt-[20px] max' type="" placeholder={t("header.header_text_30")}/>
              <li className='w-[80px] h-[35px] bg-[blue] mb-[-20px] ml-[-5px] rounded-tr-[5px] rounded-br-[5px]'>
                  <img className='ml-[30px] mt-[5px]' src="	https://clemar.uz/static/media/search.d2ffda43e103337068b589fd598257db.svg" alt="" />
              </li>
@@ -82,12 +81,11 @@ const Header = () => {
               </Link>
             </ul>
           <div className='flex gap-[10px] items-center'>
-           <img className='w-[25px] h-[23px]' src={Rasm_9} alt="" />
-           <p className='h-[23px] mt-[20px]'>{t("header.header_text_32")}</p>
+           <img className='w-[25px] h-[23px] mt-[10px]' src={Rasm_9} alt="" />
+           <p className='h-[23px] mt-[30px]'>{t("header.header_text_32")}</p>
         </div>
         </div>
       </div>
-    </div>
   );
 };
 
