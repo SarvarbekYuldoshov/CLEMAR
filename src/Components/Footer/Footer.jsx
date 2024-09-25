@@ -46,8 +46,26 @@ const Footer = () => {
                 <a className='text-[#FFFF] text-[14px]' href="">{t("footer.footer_text_9")}</a>
             </li>
         </div>
-        <div className=''>
-            
+        <div className='list-none'>
+            <li className=''>
+                <a className='text-[#FFFF] font-bold text-[25px]' href="">{t("footer.footer_text_10")}</a>
+            </li>
+            <br />
+            <li className=''>
+                <a className='text-[#FFFF] text-[14px]' href="">{t("footer.footer_text_11")}</a>
+            </li>
+            <br />
+            <li className=''>
+                <a className='text-[#FFFF] text-[14px]' href="">{t("footer.footer_text_12")}</a>
+            </li>
+            <br />
+            <li className=''>
+                <a className='text-[#FFFF] text-[14px]' href="">{t("footer.footer_text_13")}</a>
+            </li>
+            <br />
+            <li className=''>
+                <a className='text-[#FFFF] text-[14px]' href="">{t("footer.footer_text_14")}</a>
+            </li>
         </div>
       </div>
     </div>
