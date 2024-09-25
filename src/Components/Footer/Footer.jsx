@@ -5,7 +5,7 @@ const Footer = () => {
     const { t } = useTranslation();
   return (
     <div className='bg-[#1d1d41]'>
-      <div className='max-w-[1200px] mx-auto p-[20px] flex gap-[20px]'>
+      <div className='max-w-[1200px] mx-auto p-[20px] flex gap-[100px]'>
         <div className=''>
             <h1 className='text-[#FFFF] font-bold text-[25px] w-[300px]'>{t("footer.footer_text_1")}</h1>
             <p className='text-[#FFFF] text-[20px]'>{t("footer.footer_text_2")}</p>
@@ -66,6 +66,16 @@ const Footer = () => {
             <li className=''>
                 <a className='text-[#FFFF] text-[14px]' href="">{t("footer.footer_text_14")}</a>
             </li>
+        </div>
+        <div className=''>
+            <ul>
+                <li className='w-[250px] mt-[5px]'>
+                    <a className='text-[#FFFF] text-[14px]' href="">{t("footer.footer_text_15")}</a>
+                </li>
+                <li className='w-[300px] mt-[45px]'>
+                    <a className='text-[#FFFF] text-[14px]' href="">{t("footer.footer_text_16")}</a>
+                </li>
+            </ul>
         </div>
       </div>
     </div>
