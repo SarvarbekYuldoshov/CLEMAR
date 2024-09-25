@@ -83,47 +83,39 @@ const Bollen = () => {
           <p>{t("bollen.bollen_text_2")}</p>
           
           <Form form={form} layout="vertical">
-            {/* Name input with validation and placeholder */}
             <Form.Item
               name="name"
-              rules={[{ required: true, message: t("bollen.fill_all_fields") }]} // Validation rule
+              rules={[{ required: true, message: t("bollen.bollen_text_3") }]} 
             >
               <Input
                 className='w-full h-[50px] bg-gray-200'
-                placeholder={t("bollen.placeholder_name")} // Dynamic Placeholder
+                placeholder={t("bollen.placeholder_name")}
               />
             </Form.Item>
-
-            {/* Surname input with validation and placeholder */}
             <Form.Item
               name="surname"
               rules={[{ required: true, message: t("bollen.fill_all_fields") }]}
             >
               <Input
                 className='w-full h-[50px] bg-gray-200'
-                placeholder={t("bollen.placeholder_surname")} // Dynamic Placeholder
+                placeholder={t("bollen.placeholder_surname")}
               />
             </Form.Item>
-
-            {/* Number input with validation and placeholder */}
             <Form.Item
               name="number"
               rules={[{ required: true, message: t("bollen.fill_all_fields") }]}
             >
               <Input
                 className='w-full h-[50px] bg-gray-200'
-                placeholder={t("bollen.placeholder_number")} // Dynamic Placeholder
+                placeholder={t("bollen.placeholder_number")}
               />
             </Form.Item>
 
-            {/* Submit button */}
             <Button className='w-full h-[50px]' onClick={sendMessage} type="primary">
               {t("bollen.bollen_text_5")}
             </Button>
           </Form>
         </ul>
-        
-        {/* Image section */}
         <ul className=''>
           <img src={Rasm_1} alt="Product" />
         </ul>

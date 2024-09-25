@@ -112,8 +112,11 @@
     "bollen":{
         "bollen_text_1":"Biz bilan bog'lanish",
         "bollen_text_2":"Telefon raqamingizni qoldiring va menejerlarimiz tez orada siz bilan bog'lanadi",
-        "bollen_text_3":"Ism",
-        "bollen_text_4":"Telefon raqami",
-        "bollen_text_5":"Sizning xabaringiz"
+        "bollen_text_3":"Ismmingizni kiriting",
+        "bollen_text_4":"Telefon raqamingizni kiriting",
+        "bollen_text_5":"Sizning xabaringiz yuborish",
+        "bollen_text_6":"Ismingizni tugri kiriting",
+        "bollen_text_7":"Fameliyangizni tugri kiriting",
+        "bollen_text_8":"Nomerizi tugri kititing"
     }              
 }
