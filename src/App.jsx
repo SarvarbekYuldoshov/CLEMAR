@@ -11,6 +11,8 @@ import Cloos from './Components/Cloos/Cloos'
 import Lelfte from './Components/Lelfte/Lelfte'
 import Blue from './Components/Blue/Blue'
 import Bollen from './Components/Bollen/Bollen'
+import Footer from './Components/Footer/Footer'
+
 
 function App() {
   const [count, setCount] = useState(0)
@@ -28,6 +30,7 @@ function App() {
          <Lelfte/>
          <Blue/>
          <Bollen/>
+         <Footer/>
       </div>
     </>
   )
