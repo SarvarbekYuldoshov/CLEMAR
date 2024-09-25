@@ -85,34 +85,34 @@ const Bollen = () => {
           <Form form={form} layout="vertical">
             <Form.Item
               name="name"
-              rules={[{ required: true, message: t("bollen.bollen_text_3") }]} 
+              rules={[{ required: true, message: t("bollen.bollen_text_7") }]} 
             >
               <Input
                 className='w-full h-[50px] bg-gray-200'
-                placeholder={t("bollen.placeholder_name")}
+                placeholder={t("bollen.bollen_text_3")}
               />
             </Form.Item>
             <Form.Item
               name="surname"
-              rules={[{ required: true, message: t("bollen.fill_all_fields") }]}
+              rules={[{ required: true, message: t("bollen.bollen_text_8") }]}
             >
               <Input
                 className='w-full h-[50px] bg-gray-200'
-                placeholder={t("bollen.placeholder_surname")}
+                placeholder={t("bollen.bollen_text_4")}
               />
             </Form.Item>
             <Form.Item
               name="number"
-              rules={[{ required: true, message: t("bollen.fill_all_fields") }]}
+              rules={[{ required: true, message: t("bollen.bollen_text_9") }]}
             >
               <Input
                 className='w-full h-[50px] bg-gray-200'
-                placeholder={t("bollen.placeholder_number")}
+                placeholder={t("bollen.bollen_text_5")}
               />
             </Form.Item>
 
             <Button className='w-full h-[50px]' onClick={sendMessage} type="primary">
-              {t("bollen.bollen_text_5")}
+              {t("bollen.bollen_text_6")}
             </Button>
           </Form>
         </ul>

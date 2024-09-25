@@ -108,12 +108,16 @@
         "blue_text_6": "Learn More"
     },
     "bollen": {
-      "bollen_text_1": "Contact Us",
-      "bollen_text_2": "Leave your phone number, and our managers will get in touch with you shortly",
-      "bollen_text_3": "Name",
-      "bollen_text_4": "Phone Number",
-      "bollen_text_5": "Your Message"
+        "bollen_text_1": "Contact us",
+        "bollen_text_2": "Leave your phone number, and our managers will contact you soon",
+        "bollen_text_3": "Enter your name",
+        "bollen_text_4": "Enter your phone number",
+        "bollen_text_5": "Send your message",
+        "bollen_text_6": "Please enter your name correctly",
+        "bollen_text_7": "Please enter your surname correctly",
+        "bollen_text_8": "Please enter your phone number correctly"
     }
+    
   
     
   }
