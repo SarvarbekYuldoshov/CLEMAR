@@ -40,7 +40,7 @@ const Header = () => {
           </Link>
           <Link className='flex gap-[20px]' to="#home5">
             <img className='w-[25px] h-[25px]' src={Rasm_6} alt="Rasm_6" />
-            <p>{t("header.header_text_5")}</p>
+            <p>{t("header.header_text_5")}</p>         
           </Link>
         </ul>
       ),
@@ -48,7 +48,7 @@ const Header = () => {
   ];
 
   return (
-    <div className="bg-white p-[20px] mt-[60px] header">
+    <div className="bg-white p-[21px] mt-[60px] header">
       <div className="max-w-[1200px] mx-auto flex gap-[30px] items-center mt-[-26px] flex-wrap">
         <div className='border border-[blue] w-[150px] h-[35px] bg-[#007aff] rounded-[8px]'>
           <Dropdown
