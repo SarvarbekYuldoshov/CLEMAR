@@ -92,7 +92,7 @@ const Layout = () => {
             href="https://yandex.ru/navi/?ll=69.220719,41.290161"
             target="_blank"
             rel="noopener noreferrer"
-            className="text-white max-sm:text-sm"
+            className="text-white max-sm:text-[10px]"
           >
             {t('layout.layout_text_2')}
           </a>
