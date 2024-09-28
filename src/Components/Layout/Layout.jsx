@@ -75,8 +75,8 @@ const Layout = () => {
 
   return (
     <div className="bg-primary bg-[blue]">
-      <div className="container mx-auto p-4 flex justify-between items-center">
-        <div className="flex gap-4 items-center">
+      <div className="container mx-auto p-4 flex justify-between items-center mt-[-5px]">
+        <div className="flex gap-4 items-center ">
           <img
             src="https://clemar.uz/static/media/location.8f50ce0bbe934fcda50814961114ab24.svg"
             alt="Location"
@@ -103,17 +103,17 @@ const Layout = () => {
             <img
               src="https://clemar.uz/static/media/instagram.15618e7f7e625b7694935dd597571837.svg"
               alt="Instagram"
-              className="w-6 h-6"
+              className="w-6 h-6 mt-[-5px]"
             />
-            <p className="text-white">{t('layout.layout_text_3')}</p>
+            <p className="text-white mt-[10px] ">{t('layout.layout_text_3')}</p>
           </div>
           <div className="hidden lg:flex gap-2 items-center">
             <img
               src="https://clemar.uz/static/media/telegram.c595f804c186181bf4a1da46dcaaa231.svg"
               alt="Telegram"
-              className="w-6 h-6"
+              className="w-6 h-6 mt-[-5px]"
             />
-            <p className="text-white">{t('layout.layout_text_4')}</p>
+            <p className="text-white mt-[10px]">{t('layout.layout_text_4')}</p>
           </div>
           <a
             href="tel:+998555001411"
