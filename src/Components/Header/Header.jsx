@@ -49,7 +49,7 @@ const Header = () => {
 
   return (
     <div className="bg-white p-[21px] mt-[60px] header">
-      <div className="max-w-[1200px] mx-auto flex gap-[30px] items-center mt-[-26px] flex-wrap">
+      <div className="max-w-[1200px] mx-auto flex gap-[30px] items-center  flex-wrap">
         <div className='border border-[blue] w-[150px] h-[35px] bg-[#007aff] rounded-[8px]'>
           <Dropdown
             className="w-[30px] h-[25] ml-[10px]"
