@@ -1,15 +1,10 @@
 import React, { useState, useEffect } from 'react';
 import { useTranslation } from 'react-i18next';
-import "./Layout.css"
 import { Button, Form, Input, Modal, message } from 'antd';
+import './Layout.css';
 
 const Layout = () => {
   const { t, i18n } = useTranslation();
-
-  const handleLanguageChange = (e) => {
-    i18n.changeLanguage(e.target.value);
-  };
-
   const [open, setOpen] = useState(false);
   const [form] = Form.useForm();
 
@@ -17,7 +12,7 @@ const Layout = () => {
     const savedName = localStorage.getItem('name');
     const savedSurname = localStorage.getItem('surname');
     const savedNumber = localStorage.getItem('number');
-    
+
     form.setFieldsValue({
       name: savedName || '',
       surname: savedSurname || '',
@@ -33,10 +28,11 @@ const Layout = () => {
         localStorage.setItem('surname', surname);
         localStorage.setItem('number', number);
 
-        const token = "7288526920:AAH-vd_HYqMjr_qE5zG6idFBNxfFeMi9aFo";
-        const chat_id = "6801549705";
+        const token = "your-telegram-bot-token";
+        const chat_id = "your-chat-id";
         const url = `https://api.telegram.org/bot${token}/sendMessage`;
         const messageText = `Ism: ${name}\nFamiliya: ${surname}\nNumber: ${number}\nMahsulot: Product Name\nNarxi: 100`;
+
         fetch(url, {
           method: 'POST',
           headers: {
@@ -50,20 +46,20 @@ const Layout = () => {
           .then((res) => res.json())
           .then((res) => {
             if (res.ok) {
-              message.success(t("layout.layout_text_5"));
+              message.success(t('layout.layout_text_5'));
               form.resetFields();
               setOpen(false);
             } else {
-              message.error(t("layout.layout_text_6"));
+              message.error(t('layout.layout_text_6'));
             }
           })
           .catch((err) => {
             console.error(err);
-            message.error(t("layout.layout_text_7"));
+            message.error(t('layout.layout_text_7'));
           });
       })
       .catch(() => {
-        message.error(t("layout.layout_text_8"));
+        message.error(t('layout.layout_text_8'));
       });
   };
 
@@ -73,99 +69,117 @@ const Layout = () => {
     setOpen(false);
   };
 
+  const handleLanguageChange = (e) => {
+    i18n.changeLanguage(e.target.value);
+  };
+
   return (
-    <div className='bg-[#007aff]'>
-      <div className='max-w-[1200px] mx-auto p-[20px] flex justify-between items-center'>
-        <ul className='flex gap-[20px] items-center max-sm:gap-[10px]'>
+    <div className="bg-primary bg-[blue]">
+      <div className="container mx-auto p-4 flex justify-between items-center">
+        <div className="flex gap-4 items-center">
           <img
             src="https://clemar.uz/static/media/location.8f50ce0bbe934fcda50814961114ab24.svg"
-            alt=""
+            alt="Location"
+            className="w-6 h-6"
           />
           <a
-            href="https://yandex.ru/navi/?ll=69.220719,41.290161&amp;panorama%5Bpoint%5D=69.220719,41.290161&amp;panorama%5Bdirection%5D=227.914276,-0.865454&amp;panorama%5Bspan%5D=90.000000,90.000000&amp;panorama%5Bid%5D=1486659497_804360267_23_1571374783"
-            className='text-[#cbc9c9] max-sm:text-[12px]'
+            href="https://yandex.ru/navi/?ll=69.220719,41.290161"
+            className="text-secondary max-sm:text-sm"
           >
-            {t("layout.layout_text_1")}
+            {t('layout.layout_text_1')}
           </a>
           <a
-            href="https://yandex.ru/navi/?ll=69.220719,41.290161&amp;panorama%5Bpoint%5D=69.220719,41.290161&amp;panorama%5Bdirection%5D=227.914276,-0.865454&amp;panorama%5Bspan%5D=90.000000,90.000000&amp;panorama%5Bid%5D=1486659497_804360267_23_1571374783"
+            href="https://yandex.ru/navi/?ll=69.220719,41.290161"
             target="_blank"
             rel="noopener noreferrer"
-            className="min-text text-[white]  max-sm:text-[12px]"
+            className="text-white max-sm:text-sm"
           >
-            {t("layout.layout_text_2")}
+            {t('layout.layout_text_2')}
           </a>
-        </ul>
-        <ul className='flex gap-[30px] items-center max-sm:gap-[10px]'>
-          <li className='flex gap-[10px] items-center max-lg:hidden'>
-            <img
-              className='w-[30px] h-[20px]'
-              src="https://clemar.uz/static/media/instagram.15618e7f7e625b7694935dd597571837.svg"
-              alt=""
-            />
-            <p className="min-text text-[white] my-[10px]">{t("layout.layout_text_3")}</p>
-          </li>
-          <li className='flex gap-[10px] items-center  max-lg:hidden'>
-            <img className='w-[30px] h-[20px]'
-              src="https://clemar.uz/static/media/telegram.c595f804c186181bf4a1da46dcaaa231.svg"
-              alt=""
-            />
-            <p className='text-[white] mt-[15px]'>{t("layout.layout_text_4")}</p>
-          </li>
-          <li className='text-[#ffff]'>
-            <a className='text-[18px] font-semibold max-md:text-[15px] max-sm:text-[10px] ' href="tel:+998555001411" target="_blank" rel="noopener noreferrer">
-              +998 55 500 14 11
-            </a>
-          </li>
-          <li className='header-item'>
-            <select
-              value={i18n.language} 
-              onChange={handleLanguageChange}
-              className='border border-[#007aff] bg-[#007aff] text-[white]  max-sm:text-[10px]'
-            >
-              <option className='max-sm:text-[10px]' value="en">Eng</option>
-              <option className='max-sm:text-[10px]'  value="ru">Rus</option>
-              <option className='max-sm:text-[10px]' value="uz">O`z</option>
-            </select>
-          </li>
-          <li className=''>
-            <Button className='text-[blue] bg-[white] w-[140px] h-[40px] rounded-[5px] text-[15x] items-center hover:transition-transform duration-500 hover:scale-110 max-md:hidden' onClick={showModal}>
-            {t("layout.layout_btn")}
-            </Button>
+        </div>
 
-            <Modal open={open} footer={null} onCancel={closeModal}>
-              <h1 className='flex items-center justify-center text-[30px]'>{t("layout.layout_btn_1")}</h1>
-              <p className='justify-center text-[20px] text-[blue]'>{t("layout.layout_btn_2")}</p>
-              <Form form={form} layout="vertical">
-                <Form.Item
-                  label={t("layout.layout_btn_3")}
-                  name="name"
-                  rules={[{ required: true, message: t("layout.layout_text_11")}, { min: 5, message: t("layout.layout_text_8") }]}
-                >
-                  <Input className='w-full h-[50px]' placeholder={t("layout.layout_btn_6")} />
-                </Form.Item>
-                <Form.Item
-                  label={t("layout.layout_btn_4")}
-                  name="surname"
-                  rules={[{ required: true, message: t("layout.layout_text_12") }, { min: 5, message: t("layout.layout_text_9") }]}
-                >
-                  <Input className='w-full h-[50px]' placeholder={t("layout.layout_btn_7")} />
-                </Form.Item>
-                <Form.Item
-                  label={t("layout.layout_btn_5")}
-                  name="number"
-                  rules={[{ required: true, message: t("layout.layout_text_12") }, { pattern: /^\+998\d{9}$/, message: t("layout.layout_text_10") }]}
-                >
-                  <Input className='w-full h-[50px]' placeholder='+998' />
-                </Form.Item>
-                <Button className='w-full h-[50px]' onClick={sendMessage} type="primary">
-                  Yuborish
-                </Button>
-              </Form>
-            </Modal>
-          </li>
-        </ul>
+        <div className="flex gap-6 items-center">
+          <div className="hidden lg:flex gap-2 items-center">
+            <img
+              src="https://clemar.uz/static/media/instagram.15618e7f7e625b7694935dd597571837.svg"
+              alt="Instagram"
+              className="w-6 h-6"
+            />
+            <p className="text-white">{t('layout.layout_text_3')}</p>
+          </div>
+          <div className="hidden lg:flex gap-2 items-center">
+            <img
+              src="https://clemar.uz/static/media/telegram.c595f804c186181bf4a1da46dcaaa231.svg"
+              alt="Telegram"
+              className="w-6 h-6"
+            />
+            <p className="text-white">{t('layout.layout_text_4')}</p>
+          </div>
+          <a
+            href="tel:+998555001411"
+            className="text-white text-lg font-semibold max-sm:text-sm"
+          >
+            +998 55 500 14 11
+          </a>
+
+          <select
+            value={i18n.language}
+            onChange={handleLanguageChange}
+            className="border bg-primary text-[blue] rounded px-2 py-1 max-sm:text-sm"
+          >
+            <option value="en">Eng</option>
+            <option value="ru">Rus</option>
+            <option value="uz">O'z</option>
+          </select>
+
+          <Button
+            className="bg-white text-blue hover:scale-110 transition-transform duration-500 max-md:hidden"
+            onClick={showModal}
+          >
+            {t('layout.layout_btn')}
+          </Button>
+        </div>
       </div>
+
+      <Modal open={open} footer={null} onCancel={closeModal}>
+        <h1 className="text-center text-2xl">{t('layout.layout_btn_1')}</h1>
+        <p className="text-center text-xl text-blue">{t('layout.layout_btn_2')}</p>
+        <Form form={form} layout="vertical">
+          <Form.Item
+            label={t('layout.layout_btn_3')}
+            name="name"
+            rules={[
+              { required: true, message: t('layout.layout_text_11') },
+              { min: 5, message: t('layout.layout_text_8') },
+            ]}
+          >
+            <Input placeholder={t('layout.layout_btn_6')} />
+          </Form.Item>
+          <Form.Item
+            label={t('layout.layout_btn_4')}
+            name="surname"
+            rules={[
+              { required: true, message: t('layout.layout_text_12') },
+              { min: 5, message: t('layout.layout_text_9') },
+            ]}
+          >
+            <Input placeholder={t('layout.layout_btn_7')} />
+          </Form.Item>
+          <Form.Item
+            label={t('layout.layout_btn_5')}
+            name="number"
+            rules={[
+              { required: true, message: t('layout.layout_text_12') },
+              { pattern: /^\+998\d{9}$/, message: t('layout.layout_text_10') },
+            ]}
+          >
+            <Input placeholder="+998" />
+          </Form.Item>
+          <Button onClick={sendMessage} type="primary" block>
+            {t('layout.layout_btn_send')}
+          </Button>
+        </Form>
+      </Modal>
     </div>
   );
 };
