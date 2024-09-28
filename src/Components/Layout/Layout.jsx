@@ -76,11 +76,11 @@ const Layout = () => {
   return (
     <div className="bg-primary bg-[blue]">
       <div className="container mx-auto p-4 flex justify-between items-center mt-[-5px]">
-        <div className="flex gap-4 items-center ">
+        <div className="flex gap-4 items-center max-sm:gap-[5px]">
           <img
             src="https://clemar.uz/static/media/location.8f50ce0bbe934fcda50814961114ab24.svg"
             alt="Location"
-            className="w-6 h-6"
+            className="w-4 h-4"
           />
           <a
             href="https://yandex.ru/navi/?ll=69.220719,41.290161"
