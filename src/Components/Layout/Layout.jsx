@@ -117,7 +117,7 @@ const Layout = () => {
           </div>
           <a
             href="tel:+998555001411"
-            className="text-white text-lg font-semibold max-sm:text-sm"
+            className="text-white text-lg font-semibold max-sm:text-[10px]"
           >
             +998 55 500 14 11
           </a>
