@@ -84,7 +84,7 @@ const Layout = () => {
           />
           <a
             href="https://yandex.ru/navi/?ll=69.220719,41.290161"
-            className="text-secondary max-sm:text-sm"
+            className="text-secondary max-sm:text-[10px]"
           >
             {t('layout.layout_text_1')}
           </a>
