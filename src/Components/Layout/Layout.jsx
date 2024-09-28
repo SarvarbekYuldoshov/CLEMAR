@@ -125,7 +125,7 @@ const Layout = () => {
           <select
             value={i18n.language}
             onChange={handleLanguageChange}
-            className="border bg-primary text-[blue] rounded px-2 py-1 max-sm:text-sm"
+            className="border  text-white bg-transparent rounded px-2 py-1 max-sm:text-sm"
           >
             <option value="en">Eng</option>
             <option value="ru">Rus</option>
