@@ -70,7 +70,7 @@ const Header = () => {
             className='border border-black rounded-lg w-72 h-9 px-3'
             placeholder={t("header.header_text_30")}
           />
-          <button className='w-20 h-9 bg-blue-500 rounded-tr-lg rounded-br-lg flex items-center justify-center'>
+          <button className='w-20 h-9 ml-[-10px] bg-blue-500 rounded-tr-lg rounded-br-lg flex items-center justify-center'>
             <img className='w-5 h-5' src="https://clemar.uz/static/media/search.d2ffda43e103337068b589fd598257db.svg" alt="Search" />
           </button>
         </div>
