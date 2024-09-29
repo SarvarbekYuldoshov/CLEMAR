@@ -62,7 +62,7 @@ const Header = () => {
         </div>
         <div className='flex items-center gap-5'>
           <Link className="logo" to="/">
-            <img className='w-40 h-9' src={Rasm_7} alt="logo" />
+            <img className='w-35 h-9' src={Rasm_7} alt="logo" />
           </Link>
         </div>
         <div className='flex items-center'>
