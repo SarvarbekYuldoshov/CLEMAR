@@ -1,5 +1,4 @@
 import React from 'react';
-import "./Header.css";
 import { useTranslation } from 'react-i18next';
 import { Dropdown } from 'antd';
 import 'antd/dist/reset.css';
@@ -13,7 +12,6 @@ import Rasm_6 from "../images/rasm6.png";
 import Rasm_7 from "../images/rasm7.png";
 import Rasm_9 from "../images/rasm9.png";
 
-
 const Header = () => {
   const { t } = useTranslation();
 
@@ -21,26 +19,26 @@ const Header = () => {
     {
       key: '1',
       label: (
-        <ul className=''>
-          <Link className='flex gap-[20px]' to="#home1">
-            <img className='w-[25px] h-[25px]' src={Rasm_2} alt="Rasm_2" />
+        <ul className='flex flex-col gap-2'>
+          <Link className='flex gap-5 items-center' to="#home1">
+            <img className='w-6 h-6' src={Rasm_2} alt="Rasm_2" />
             <p>{t("header.header_text_1")}</p>
           </Link>
-          <Link className='flex gap-[20px]' to="#home2">
-            <img className='w-[25px] h-[25px]' src={Rasm_3} alt="Rasm_3" />
+          <Link className='flex gap-5 items-center' to="#home2">
+            <img className='w-6 h-6' src={Rasm_3} alt="Rasm_3" />
             <p>{t("header.header_text_2")}</p>
           </Link>
-          <Link className='flex gap-[20px]' to="#home3">
-            <img className='w-[25px] h-[25px]' src={Rasm_4} alt="Rasm_4" />
+          <Link className='flex gap-5 items-center' to="#home3">
+            <img className='w-6 h-6' src={Rasm_4} alt="Rasm_4" />
             <p>{t("header.header_text_3")}</p>
           </Link>
-          <Link className='flex gap-[20px]' to="#home4">
-            <img className='w-[25px] h-[25px]' src={Rasm_5} alt="Rasm_5" />
+          <Link className='flex gap-5 items-center' to="#home4">
+            <img className='w-6 h-6' src={Rasm_5} alt="Rasm_5" />
             <p>{t("header.header_text_4")}</p>
           </Link>
-          <Link className='flex gap-[20px]' to="#home5">
-            <img className='w-[25px] h-[25px]' src={Rasm_6} alt="Rasm_6" />
-            <p>{t("header.header_text_5")}</p>         
+          <Link className='flex gap-5 items-center' to="#home5">
+            <img className='w-6 h-6' src={Rasm_6} alt="Rasm_6" />
+            <p>{t("header.header_text_5")}</p>
           </Link>
         </ul>
       ),
@@ -48,44 +46,43 @@ const Header = () => {
   ];
 
   return (
-    <div className="bg-white p-[21px] mt-[60px] header">
-      <div className="max-w-[1200px] mx-auto flex gap-[30px] items-center  flex-wrap">
-        <div className='border border-[blue] w-[150px] h-[35px] bg-[#007aff] rounded-[8px]'>
+    <div className="bg-white p-5 mt-14 fixed top-0 left-0 right-0 shadow-md z-50">
+      <div className="max-w-7xl mx-auto flex gap-8 items-center flex-wrap">
+        <div className='w-40 h-9 bg-blue-500 rounded-lg'>
           <Dropdown
-            className="w-[30px] h-[25] ml-[10px]"
+            className="ml-3"
             menu={{ items }}
             placement="bottomRight"
           >
-            <button className="flex items-center  bg-transparent text-white rounded gap-[10px]">
-              <img className="" src={Rasm_1} alt="Menu" />
-              <span className="text-white text-[18px] font-semibold mt-[5px]">{t("header.header_text_29")}</span>
+            <button className="flex items-center gap-3 bg-transparent text-white">
+              <img className="w-5 h-5" src={Rasm_1} alt="Menu" />
+              <span className="text-white text-lg font-semibold">{t("header.header_text_29")}</span>
             </button>
           </Dropdown>
         </div>
-        <div className='flex  gap-[20px] items-center'>
-          <ul className=''>
-            <a className="logo" href="/">
-                <img className='w-[150px] h-[35px] mt-[15px]' src={Rasm_7} alt="logo" />
-            </a>
-          </ul>
+        <div className='flex items-center gap-5'>
+          <Link className="logo" to="/">
+            <img className='w-40 h-9' src={Rasm_7} alt="logo" />
+          </Link>
         </div>
-        <ul className='flex items-center justify-center'>
-              <input className='border border-black rounded-[3px] w-[280px] h-[35px] mt-[20px] max' type="" placeholder={t("header.header_text_30")}/>
-             <li className='w-[80px] h-[35px] bg-[blue] mb-[-20px] ml-[-5px] rounded-tr-[5px] rounded-br-[5px]'>
-                 <img className='ml-[30px] mt-[5px]' src="	https://clemar.uz/static/media/search.d2ffda43e103337068b589fd598257db.svg" alt="" />
-             </li>
-          </ul>
-           <ul className='mt-[25px]'>
-              <Link to="/onas" className=''>
-                  {t("header.header_text_31")}
-              </Link>
-            </ul>
-          <div className='flex gap-[10px] items-center'>
-           <img className='w-[25px] h-[23px] mt-[10px]' src={Rasm_9} alt="" />
-           <p className='h-[23px] mt-[30px]'>{t("header.header_text_32")}</p>
+        <div className='flex items-center'>
+          <input
+            className='border border-black rounded-lg w-72 h-9 px-3'
+            placeholder={t("header.header_text_30")}
+          />
+          <button className='w-20 h-9 bg-blue-500 rounded-tr-lg rounded-br-lg flex items-center justify-center'>
+            <img className='w-5 h-5' src="https://clemar.uz/static/media/search.d2ffda43e103337068b589fd598257db.svg" alt="Search" />
+          </button>
         </div>
+        <Link to="/onas" className='mt-2 text-lg'>
+          {t("header.header_text_31")}
+        </Link>
+        <div className='flex gap-3 items-center'>
+          <img className='w-6 h-6' src={Rasm_9} alt="icon" />
+          <p>{t("header.header_text_32")}</p>
         </div>
       </div>
+    </div>
   );
 };
 
