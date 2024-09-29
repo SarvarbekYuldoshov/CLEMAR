@@ -67,7 +67,7 @@ const Header = () => {
         </div>
         <div className='flex items-center'>
           <input
-            className='border border-black rounded-lg w-72 h-9 px-3'
+            className='border border-black rounded-lg w-60 h-9 px-3'
             placeholder={t("header.header_text_30")}
           />
           <button className='w-20 h-9 ml-[-10px] bg-blue-500 rounded-tr-lg rounded-br-lg flex items-center justify-center'>
