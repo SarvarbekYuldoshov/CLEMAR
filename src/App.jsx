@@ -22,7 +22,7 @@ function App() {
       <div className='App'>
          <Layout/>
          <Header/>
-         {/* <Hero/> */}
+         <Hero/>
          {/* <Menu/> */}
          {/* <Section/> */}
          {/* <Main/> */}
