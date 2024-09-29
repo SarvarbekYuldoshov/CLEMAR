@@ -80,11 +80,11 @@ const Layout = () => {
           <img
             src="https://clemar.uz/static/media/location.8f50ce0bbe934fcda50814961114ab24.svg"
             alt="Location"
-            className="w-4 h-4"
+            className="w-[20px] h-[20px]"
           />
           <a
             href="https://yandex.ru/navi/?ll=69.220719,41.290161"
-            className="text-secondary max-sm:text-[10px]"
+            className="text-[#676565] max-sm:text-[10px]"
           >
             {t('layout.layout_text_1')}
           </a>
