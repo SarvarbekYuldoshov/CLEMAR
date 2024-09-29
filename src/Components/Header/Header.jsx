@@ -79,7 +79,7 @@ const Header = () => {
         </Link>
         <div className='flex gap-3 items-center'>
           <img className='w-6 h-6' src={Rasm_9} alt="icon" />
-          <p>{t("header.header_text_32")}</p>
+          <p className='mb-[-5px]'>{t("header.header_text_32")}</p>
         </div>
       </div>
     </div>
